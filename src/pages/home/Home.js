@@ -1,8 +1,7 @@
 import React, { useEffect } from "react";
 import { NavbarDefault } from "../nav/Navigation";
 import AOS from "aos";
-import Banner from "./Banner";
-import CarouselBanner from "./CarouselBanner";
+import CarouselComponent from "../components/Carousel";
 
 const Home = () => {
   useEffect(() => {
@@ -11,8 +10,7 @@ const Home = () => {
   return (
     <div className="overflow-hidden">
       <NavbarDefault />
-      <Banner />
-      {/* <CarouselBanner /> */}
+      <CarouselComponent />
     </div>
   );
 };
