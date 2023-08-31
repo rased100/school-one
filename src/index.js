@@ -1,10 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import "aos/dist/aos.css"; // Import the CSS for animations
+import AOS from "aos";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+AOS.init(); // Initialize AOS
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />

@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { NavbarDefault } from "../nav/Navigation";
 import AOS from "aos";
 import Banner from "./Banner";
+import CarouselBanner from "./CarouselBanner";
 
 const Home = () => {
   useEffect(() => {
@@ -11,6 +12,7 @@ const Home = () => {
     <div className="overflow-hidden">
       <NavbarDefault />
       <Banner />
+      {/* <CarouselBanner /> */}
     </div>
   );
 };

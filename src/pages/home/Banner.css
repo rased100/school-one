@@ -1,0 +1,27 @@
+/* CSS for animations */
+/* @keyframes slideInTop {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInBottom {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+} */
+
+/* Apply these classes to the respective elements */
+/* .top-text {
+  animation: slideInTop 1s ease-in-out forwards;
+}
+
+.bottom-text {
+  animation: slideInBottom 1s ease-in-out forwards;
+} */
