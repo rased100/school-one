@@ -16,7 +16,7 @@ const CarouselComponent = () => {
       // width="50%"
       infiniteLoop={true}
       showThumbs={false}
-      autoPlay={true}
+      // autoPlay={true}
       autoFocus={true}
       dynamicHeight={true}
     >
@@ -25,20 +25,21 @@ const CarouselComponent = () => {
         <img
           src={img1}
           alt="Image 1"
-          className="opacity-20 w-full h-[600px] "
+          className="opacity-30 w-full h-[600px] "
         />
         {/* lable */}
-        <div className="absolute flex justify-center transform -translate-y-1/2 left-1/4 right-1/4 top-1/2">
+        <div className="absolute flex justify-center transform -translate-y-1/2 left-[5%] right-[5%] top-1/2">
           <div
             // className="flex-1"
-            className="flex-1 shadow-5xl"
+            className="flex-1  shadow-lg"
             data-aos="fade-down"
             data-aos-duration="1000"
           >
             <Typography
               as="a"
               href="#"
-              className=" cursor-pointer font-bold text-7xl"
+              className=" cursor-pointer font-bold text-7xl text-white"
+              style={{ textShadow: "5px 5px 50px black" }}
             >
               কিশালয় বিদ্যানিকেতন
             </Typography>
@@ -47,7 +48,10 @@ const CarouselComponent = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              <Typography className=" text-2xl font-bold rounded-full pt-5">
+              <Typography
+                className=" text-2xl font-bold rounded-full pt-5 text-white"
+                style={{ textShadow: "5px 5px 50px black" }}
+              >
                 প্লে-গ্রুপ থেকে দশম শ্রেণী
               </Typography>
             </div>
@@ -61,20 +65,21 @@ const CarouselComponent = () => {
         <img
           src={img2}
           alt="Image 2"
-          className="opacity-20 w-full h-[600px] "
+          className="opacity-30 w-full h-[600px] "
         />
         {/* lable */}
-        <div className="absolute flex justify-center transform -translate-y-1/2 left-1/4 right-1/4 top-1/2">
+        <div className="absolute flex justify-center transform -translate-y-1/2 left-[5%] right-[5%] top-1/2">
           <div
             // className="flex-1"
-            className="flex-1 shadow-5xl"
+            className="flex-1  shadow-lg"
             data-aos="fade-down"
             data-aos-duration="1000"
           >
             <Typography
               as="a"
               href="#"
-              className=" cursor-pointer font-bold text-7xl"
+              className=" cursor-pointer font-bold text-7xl text-white"
+              style={{ textShadow: "5px 5px 50px black" }}
             >
               কিশালয় বিদ্যানিকেতন
             </Typography>
@@ -83,7 +88,10 @@ const CarouselComponent = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              <Typography className=" text-2xl font-bold rounded-full pt-5">
+              <Typography
+                className=" text-2xl font-bold rounded-full pt-5 text-white"
+                style={{ textShadow: "5px 5px 50px black" }}
+              >
                 প্লে-গ্রুপ থেকে দশম শ্রেণী
               </Typography>
             </div>
@@ -97,20 +105,21 @@ const CarouselComponent = () => {
         <img
           src={img3}
           alt="Image 3"
-          className="opacity-20 w-full h-[600px] "
+          className="opacity-30 w-full h-[600px] "
         />
         {/* lable */}
-        <div className="absolute flex justify-center transform -translate-y-1/2 left-1/4 right-1/4 top-1/2">
+        <div className="absolute flex justify-center transform -translate-y-1/2 left-[5%] right-[5%] top-1/2">
           <div
             // className="flex-1"
-            className="flex-1 shadow-5xl"
+            className="flex-1  shadow-lg"
             data-aos="fade-down"
             data-aos-duration="1000"
           >
             <Typography
               as="a"
               href="#"
-              className=" cursor-pointer font-bold text-7xl"
+              className=" cursor-pointer font-bold text-7xl text-white"
+              style={{ textShadow: "5px 5px 50px black" }}
             >
               কিশালয় বিদ্যানিকেতন
             </Typography>
@@ -119,7 +128,10 @@ const CarouselComponent = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              <Typography className=" text-2xl font-bold rounded-full pt-5">
+              <Typography
+                className=" text-2xl font-bold rounded-full pt-5 text-white"
+                style={{ textShadow: "5px 5px 50px black" }}
+              >
                 প্লে-গ্রুপ থেকে দশম শ্রেণী
               </Typography>
             </div>
@@ -133,20 +145,21 @@ const CarouselComponent = () => {
         <img
           src={img4}
           alt="Image 4"
-          className="opacity-20 w-full h-[600px] "
+          className="opacity-30 w-full h-[600px] "
         />
         {/* lable */}
-        <div className="absolute flex justify-center transform -translate-y-1/2 left-1/4 right-1/4 top-1/2">
+        <div className="absolute flex justify-center transform -translate-y-1/2 left-[5%] right-[5%] top-1/2">
           <div
             // className="flex-1"
-            className="flex-1 shadow-5xl"
+            className="flex-1  shadow-lg"
             data-aos="fade-down"
             data-aos-duration="1000"
           >
             <Typography
               as="a"
               href="#"
-              className=" cursor-pointer font-bold text-7xl"
+              className=" cursor-pointer font-bold text-7xl text-white"
+              style={{ textShadow: "5px 5px 50px black" }}
             >
               কিশালয় বিদ্যানিকেতন
             </Typography>
@@ -155,7 +168,10 @@ const CarouselComponent = () => {
               data-aos="fade-up"
               data-aos-duration="1500"
             >
-              <Typography className=" text-2xl font-bold rounded-full pt-5">
+              <Typography
+                className=" text-2xl font-bold rounded-full pt-5 text-white"
+                style={{ textShadow: "5px 5px 50px black" }}
+              >
                 প্লে-গ্রুপ থেকে দশম শ্রেণী
               </Typography>
             </div>
