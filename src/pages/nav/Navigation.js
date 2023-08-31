@@ -27,7 +27,7 @@ export function NavbarDefault() {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Pages
+          Home
         </a>
       </Typography>
       <Typography
@@ -37,7 +37,7 @@ export function NavbarDefault() {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Account
+          About Us
         </a>
       </Typography>
       <Typography
@@ -47,7 +47,7 @@ export function NavbarDefault() {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Blocks
+          Links
         </a>
       </Typography>
       <Typography
@@ -57,7 +57,7 @@ export function NavbarDefault() {
         className="p-1 font-normal"
       >
         <a href="#" className="flex items-center">
-          Docs
+          Notice
         </a>
       </Typography>
     </ul>
@@ -65,10 +65,10 @@ export function NavbarDefault() {
 
   return (
     // <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 bg-[#124559]">
-    <Navbar className="mx-auto  py-2 px-4 lg:px-8 lg:py-2 bg-[#124559]">
+    <Navbar className="mx-auto  py-2 px-4 lg:px-8 lg:py-2 bg-[#124559] rounded-none">
       <div className=" mx-auto flex items-center justify-around text-blue-gray-900">
         <div className="flex items-center">
-          <Typography className="rounded">
+          <Typography className="">
             <img
               src={logo}
               alt="Logo"
