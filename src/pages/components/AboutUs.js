@@ -3,7 +3,7 @@ import img3 from "../../assets/cImg3.jpg";
 
 const AboutUs = () => {
   return (
-    <div className="bg-white rounded-t-lg bg-gray-400">
+    <div className="bg-white rounded-t-lg bg-gray-300">
       {/* <h2 className="text-black bg-[#2e5e89]">AboutUs</h2> */}
       <h2 className="text-black bg-[#2e5e89] text-white font-bold text-2xl rounded-t-lg">
         আমাদের সম্পর্কে

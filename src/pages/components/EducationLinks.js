@@ -4,7 +4,7 @@ import SingleLink from "./SingleLink";
 
 const EducationLinks = () => {
   return (
-    <div className="flex mx-2 rounded-t-lg bg-gray-400">
+    <div className="flex mx-2 rounded-t-lg bg-gray-300">
       <div className="">
         {/* <h2 className="text-black bg-[#2e5e89]">AboutUs</h2> */}
         <h2 className="text-black bg-[#2e5e89] text-white font-bold text-2xl rounded-t-lg">
