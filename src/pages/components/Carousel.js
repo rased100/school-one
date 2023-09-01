@@ -16,7 +16,7 @@ const CarouselComponent = () => {
       // width="50%"
       infiniteLoop={true}
       showThumbs={false}
-      // autoPlay={true}
+      autoPlay={true}
       autoFocus={true}
       dynamicHeight={true}
     >
