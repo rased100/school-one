@@ -5,7 +5,8 @@ const SingleLink = (props) => {
     <div className="flex w-full py-2">
       <a
         href={props.link ? props.link : "#"}
-        class="inline-flex items-center justify-center p-2 text-base font-medium text-black rounded-lg bg-gray-100 hover:text-gray-900 hover:bg-gray-400 "
+        className="inline-flex items-center justify-center p-2 text-base font-medium text-black rounded-lg bg-gray-100 hover:text-gray-900 hover:bg-gray-400 "
+        target="_blank"
       >
         <span className="w-full">{props.title ? props.title : "Link"}</span>
         <svg

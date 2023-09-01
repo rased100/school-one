@@ -4,6 +4,7 @@ import AOS from "aos";
 import CarouselComponent from "../components/Carousel";
 import AboutUs from "../components/AboutUs";
 import Header from "../components/Header";
+import HeaderTwo from "../components/HeaderTwo";
 
 const Home = () => {
   useEffect(() => {
@@ -14,6 +15,7 @@ const Home = () => {
       <NavbarDefault />
       <CarouselComponent />
       <Header />
+      <HeaderTwo />
     </div>
   );
 };
