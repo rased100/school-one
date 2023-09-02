@@ -5,6 +5,7 @@ import CarouselComponent from "../components/Carousel";
 import AboutUs from "../components/AboutUs";
 import Header from "../components/Header";
 import HeaderTwo from "../components/HeaderTwo";
+import Teachers from "../components/Teachers/Teachers";
 
 const Home = () => {
   useEffect(() => {
@@ -16,6 +17,7 @@ const Home = () => {
       <CarouselComponent />
       <Header />
       <HeaderTwo />
+      <Teachers />
     </div>
   );
 };
