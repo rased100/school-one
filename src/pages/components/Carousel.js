@@ -16,7 +16,7 @@ const CarouselComponent = () => {
       // width="50%"
       infiniteLoop={true}
       showThumbs={false}
-      autoPlay={true}
+      // autoPlay={true}
       autoFocus={true}
       dynamicHeight={true}
     >
@@ -38,7 +38,7 @@ const CarouselComponent = () => {
             <Typography
               as="a"
               href="#"
-              className=" cursor-pointer font-bold text-7xl text-white"
+              className=" cursor-pointer font-bold text-5xl sm:text-7xl text-white"
               style={{ textShadow: "5px 5px 50px black" }}
             >
               কিশালয় বিদ্যানিকেতন
@@ -49,7 +49,7 @@ const CarouselComponent = () => {
               data-aos-duration="1500"
             >
               <Typography
-                className=" text-2xl font-bold rounded-full pt-5 text-white"
+                className="text-lg sm:text-2xl font-bold rounded-full pt-5 text-white"
                 style={{ textShadow: "5px 5px 50px black" }}
               >
                 প্লে-গ্রুপ থেকে দশম শ্রেণী
@@ -78,7 +78,7 @@ const CarouselComponent = () => {
             <Typography
               as="a"
               href="#"
-              className=" cursor-pointer font-bold text-7xl text-white"
+              className=" cursor-pointer font-bold text-5xl sm:text-7xl text-white"
               style={{ textShadow: "5px 5px 50px black" }}
             >
               কিশালয় বিদ্যানিকেতন
@@ -89,7 +89,7 @@ const CarouselComponent = () => {
               data-aos-duration="1500"
             >
               <Typography
-                className=" text-2xl font-bold rounded-full pt-5 text-white"
+                className="text-lg sm:text-2xl font-bold rounded-full pt-5 text-white"
                 style={{ textShadow: "5px 5px 50px black" }}
               >
                 প্লে-গ্রুপ থেকে দশম শ্রেণী
@@ -118,7 +118,7 @@ const CarouselComponent = () => {
             <Typography
               as="a"
               href="#"
-              className=" cursor-pointer font-bold text-7xl text-white"
+              className=" cursor-pointer font-bold text-5xl sm:text-7xl text-white"
               style={{ textShadow: "5px 5px 50px black" }}
             >
               কিশালয় বিদ্যানিকেতন
@@ -129,7 +129,7 @@ const CarouselComponent = () => {
               data-aos-duration="1500"
             >
               <Typography
-                className=" text-2xl font-bold rounded-full pt-5 text-white"
+                className="text-lg sm:text-2xl font-bold rounded-full pt-5 text-white"
                 style={{ textShadow: "5px 5px 50px black" }}
               >
                 প্লে-গ্রুপ থেকে দশম শ্রেণী
@@ -158,7 +158,7 @@ const CarouselComponent = () => {
             <Typography
               as="a"
               href="#"
-              className=" cursor-pointer font-bold text-7xl text-white"
+              className=" cursor-pointer font-bold text-5xl sm:text-7xl text-white"
               style={{ textShadow: "5px 5px 50px black" }}
             >
               কিশালয় বিদ্যানিকেতন
@@ -169,7 +169,7 @@ const CarouselComponent = () => {
               data-aos-duration="1500"
             >
               <Typography
-                className=" text-2xl font-bold rounded-full pt-5 text-white"
+                className="text-lg sm:text-2xl font-bold rounded-full pt-5 text-white"
                 style={{ textShadow: "5px 5px 50px black" }}
               >
                 প্লে-গ্রুপ থেকে দশম শ্রেণী
