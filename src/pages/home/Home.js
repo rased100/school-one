@@ -8,6 +8,7 @@ import HeaderTwo from "../components/HeaderTwo";
 import Teachers from "../components/Teachers/Teachers";
 import Location from "../components/Location";
 import Footer from "../components/Footer";
+import Gallery from "../components/PhotoGallery/Gallery";
 
 const Home = () => {
   useEffect(() => {
@@ -20,6 +21,7 @@ const Home = () => {
       <Header />
       <HeaderTwo />
       <Teachers />
+      <Gallery />
       <Location />
       <Footer />
     </div>
