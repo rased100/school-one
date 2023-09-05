@@ -2,14 +2,13 @@ import React from "react";
 import { MdPhoneInTalk, MdEmail } from "react-icons/md";
 const Location = () => {
   return (
-    <div
-      data-aos="fade-up"
-      data-aos-duration="2000"
-      data-aos-easing="ease-in-out-back"
-      className="pt-5 lg:px-20 px-10 mb-0 bg-gray-300"
-    >
+    <div className="pt-5 lg:px-20 px-10 mb-0 bg-gray-300" id="Contact">
       <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-5 py-10">
-        <div>
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          //
+        >
           <h1 className="lg:text-5xl text-3xl text-left font-bold pb-5">
             Our Location
           </h1>
@@ -29,7 +28,11 @@ const Location = () => {
             </a>
           </div>
         </div>
-        <div>
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1500"
+          //
+        >
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d945.9663544156386!2d90.37641621848134!3d23.806441767550226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smirpur%2013!5e0!3m2!1sen!2sbd!4v1693675701489!5m2!1sen!2sbd"
             title="map"

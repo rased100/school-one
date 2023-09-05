@@ -5,7 +5,8 @@ const TeacherCard = ({ img, name, designation, desc1, desc2, desc3 }) => {
     <div
       data-aos="zoom-out"
       data-aos-duration="2000"
-      data-aos-easing="ease-in-out-back"
+      // data-aos-easing="ease-in-out-back"
+      //
       className="w-full bg-white p-3 rounded-xl shadow-xl"
     >
       <div className="flex justify-around items-center rounded-full">

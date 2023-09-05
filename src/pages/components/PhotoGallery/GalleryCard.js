@@ -3,9 +3,9 @@ import React from "react";
 const GalleryCard = ({ img }) => {
   return (
     <div
-      data-aos="flip-right"
-      data-aos-duration="3000"
-      data-aos-easing="ease-in-out-back"
+      data-aos="zoom-in"
+      data-aos-duration="2000"
+      //
       className="card w-full bg-base-100 shadow-xl"
     >
       <figure className="px-10 py-10">

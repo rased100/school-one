@@ -49,7 +49,7 @@ const Gallery = () => {
     },
   ];
   return (
-    <div className="text-white bg-gray-500 mt-0">
+    <div className="text-white bg-gray-400 mt-0">
       <div className="container mx-auto p-10">
         <h1 className="lg:text-5xl text-4xl font-bold my-5">Photo Gallery</h1>
         <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 justify-between py-10 gap-5">

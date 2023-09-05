@@ -36,7 +36,7 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="#About" className="flex items-center">
           About Us
         </a>
       </Typography>
@@ -46,18 +46,8 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
-          Links
-        </a>
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <a href="#" className="flex items-center">
-          Notice
+        <a href="#Contact" className="flex items-center">
+          Contact
         </a>
       </Typography>
     </ul>
