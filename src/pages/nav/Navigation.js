@@ -26,7 +26,7 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex items-center hover:text-blue-500">
           Home
         </a>
       </Typography>
@@ -36,7 +36,7 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#About" className="flex items-center">
+        <a href="#About" className="flex items-center hover:text-blue-500">
           About Us
         </a>
       </Typography>
@@ -46,7 +46,7 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#Contact" className="flex items-center">
+        <a href="#Contact" className="flex items-center hover:text-blue-500">
           Contact
         </a>
       </Typography>
@@ -55,7 +55,7 @@ export function NavbarDefault() {
 
   return (
     // <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 bg-[#124559]">
-    <Navbar className="mx-auto  py-2 px-4 lg:px-8 lg:py-2 bg-[#124559] rounded-none">
+    <Navbar className="mx-auto  py-2 px-4 lg:px-8 lg:py-2 bg-[#124559] rounded-none border-0">
       <div className=" mx-auto flex items-center justify-around text-blue-gray-900">
         <div className="flex items-center">
           <Typography className="">
@@ -71,7 +71,7 @@ export function NavbarDefault() {
             className="mx-5 cursor-pointer py-1.5 font-bold text-2xl"
           >
             কিশালয় বিদ্যানিকেতন
-            <Typography className="text-sm bg-gray-500 rounded-full mx-10 ">
+            <Typography className="text-sm bg-gray-500 rounded-full mx-10 px-3 ">
               প্লে-গ্রুপ থেকে দশম শ্রেণী
             </Typography>
           </Typography>

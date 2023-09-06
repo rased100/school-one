@@ -4,8 +4,8 @@ const TeacherCard = ({ img, name, designation, desc1, desc2, desc3 }) => {
   return (
     <div
       data-aos="zoom-out"
-      data-aos-duration="2000"
-      // data-aos-easing="ease-in-out-back"
+      // data-aos-duration="1000"
+      data-aos-easing="ease-in-out-back"
       //
       className="w-full bg-white p-3 rounded-xl shadow-xl"
     >

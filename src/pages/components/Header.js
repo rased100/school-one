@@ -8,7 +8,7 @@ const Header = () => {
     <div className="flex justify-center mt-10">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-2 px-5 md:px-10 sm:w-[95%] md:w-[90%] lg:w-[80%]">
         <div
-          data-aos="fade-left"
+          data-aos="zoom-in"
           data-aos-duration="1500"
           //
           className="md:col-span-2 bg-gray-200 rounded-lg"
@@ -16,7 +16,7 @@ const Header = () => {
           <HeadTeacher />
         </div>
         <div
-          data-aos="fade-right"
+          data-aos="zoom-in"
           data-aos-duration="1500"
           //
           className="md:col-span-1 bg-gray-200 rounded-lg"

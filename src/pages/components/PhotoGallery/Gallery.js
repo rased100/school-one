@@ -49,10 +49,12 @@ const Gallery = () => {
     },
   ];
   return (
-    <div className="text-white bg-gray-400 mt-0">
+    <div className="text-white bg-gray-300">
       <div className="container mx-auto p-10">
-        <h1 className="lg:text-5xl text-4xl font-bold my-5">Photo Gallery</h1>
-        <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 justify-between py-10 gap-5">
+        <h1 className="lg:text-5xl text-4xl font-bold text-black my-5 ">
+          Photo Gallery
+        </h1>
+        <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 justify-between pb-10 gap-5">
           {images.map((image) => (
             <GalleryCard key={image.id} img={image.img} />
           ))}

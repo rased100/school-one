@@ -61,10 +61,10 @@ const Footer = () => {
       {/* <div className=" w-full  "> */}
       <div className="w-full grid grid-cols-1  lg:grid-cols-3 ">
         <div
-          data-aos="fade-left"
+          data-aos="zoom-in"
           data-aos-duration="1500"
           //
-          className="flex flex-col justify-between items-center col-span-1"
+          className="flex flex-col justify-between items-center col-span-1 py-5"
         >
           <Typography
             variant="h5"

@@ -16,16 +16,16 @@ const CarouselComponent = () => {
       // width="50%"
       infiniteLoop={true}
       showThumbs={false}
-      autoPlay={true}
+      // autoPlay={true}
       autoFocus={true}
       dynamicHeight={true}
     >
       {/* carousel - 1 */}
-      <div className="relative bg-black">
+      <div className="relative bg-gray-900">
         <img
           src={img1}
           alt="Image 1"
-          className="opacity-30 w-full h-[600px] "
+          className="opacity-40 w-full h-[600px] "
         />
         {/* lable */}
         <div className="absolute flex justify-center transform -translate-y-1/2 left-[5%] right-[5%] top-1/2">
@@ -61,11 +61,11 @@ const CarouselComponent = () => {
       </div>
 
       {/* carousel - 2 */}
-      <div className="relative bg-black">
+      <div className="relative bg-gray-900">
         <img
           src={img2}
           alt="Image 2"
-          className="opacity-30 w-full h-[600px] "
+          className="opacity-40 w-full h-[600px] "
         />
         {/* lable */}
         <div className="absolute flex justify-center transform -translate-y-1/2 left-[5%] right-[5%] top-1/2">
@@ -101,11 +101,11 @@ const CarouselComponent = () => {
       </div>
 
       {/* carousel - 3 */}
-      <div className="relative bg-black">
+      <div className="relative bg-gray-900">
         <img
           src={img3}
           alt="Image 3"
-          className="opacity-30 w-full h-[600px] "
+          className="opacity-40 w-full h-[600px] "
         />
         {/* lable */}
         <div className="absolute flex justify-center transform -translate-y-1/2 left-[5%] right-[5%] top-1/2">
@@ -141,11 +141,11 @@ const CarouselComponent = () => {
       </div>
 
       {/* carousel - 4 */}
-      <div className="relative bg-black">
+      <div className="relative bg-gray-900">
         <img
           src={img4}
           alt="Image 4"
-          className="opacity-30 w-full h-[600px] "
+          className="opacity-40 w-full h-[600px] "
         />
         {/* lable */}
         <div className="absolute flex justify-center transform -translate-y-1/2 left-[5%] right-[5%] top-1/2">

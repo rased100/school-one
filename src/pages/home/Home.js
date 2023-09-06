@@ -15,7 +15,7 @@ const Home = () => {
     AOS.init();
   }, []);
   return (
-    <div className="bg-gray-400">
+    <div className="">
       <NavbarDefault />
       <CarouselComponent />
       <Header />
