@@ -9,7 +9,13 @@ const GalleryCard = ({ img }) => {
       className="card w-full bg-base-100 shadow-xl rounded-md"
     >
       <figure className="">
-        {<img src={img} alt={img} className="rounded-md" />}
+        {
+          <img
+            src={img}
+            alt={img}
+            className="rounded-md object-cover object-fill h-60 w-full"
+          />
+        }
       </figure>
     </div>
   );
