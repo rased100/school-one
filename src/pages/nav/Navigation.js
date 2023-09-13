@@ -7,6 +7,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import logo from "../../assets/logo-2.png";
+import "./Navigation.css";
 
 export function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -55,7 +56,7 @@ export function NavbarDefault() {
 
   return (
     // <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 bg-[#124559]">
-    <Navbar className="mx-auto  py-2 px-4 lg:px-8 lg:py-2 bg-[#ff006e] rounded-none border-0">
+    <Navbar className="mx-auto  py-2 px-4 lg:px-8 lg:py-2  rounded-none border-0 navigation-background">
       <div className=" mx-auto flex items-center justify-around text-blue-gray-900">
         <div className="flex items-center">
           <Typography className="">
