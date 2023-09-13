@@ -9,17 +9,14 @@ const EducationLinks = () => {
       </h2>
       <div className="px-5 ">
         <SingleLink
-          title="মাধ্যমিক ও উচ্চ শিক্ষা অধিদপ্তর"
-          link="https://dshe.gov.bd/"
+          title="শিক্ষা বোর্ড, ঢাকা"
+          link="https://www.dhakaeducationboard.gov.bd/"
         />
         <SingleLink
-          title="মাধ্যমিক ও উচ্চ শিক্ষা অধিদপ্তর"
-          link="https://dshe.gov.bd/"
+          title="মাধ্যমিক পরীক্ষার ফলাফল"
+          link="http://www.educationboardresults.gov.bd/"
         />
-        <SingleLink
-          title="মাধ্যমিক ও উচ্চ শিক্ষা অধিদপ্তর"
-          link="https://dshe.gov.bd/"
-        />
+        <SingleLink title="শিক্ষা মন্ত্রণালয়" link="https://moedu.gov.bd/" />
         <SingleLink
           title="মাধ্যমিক ও উচ্চ শিক্ষা অধিদপ্তর"
           link="https://dshe.gov.bd/"
