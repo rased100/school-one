@@ -55,7 +55,7 @@ export function NavbarDefault() {
 
   return (
     // <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4 bg-[#124559]">
-    <Navbar className="mx-auto  py-2 px-4 lg:px-8 lg:py-2 bg-[#124559] rounded-none border-0">
+    <Navbar className="mx-auto  py-2 px-4 lg:px-8 lg:py-2 bg-[#ff006e] rounded-none border-0">
       <div className=" mx-auto flex items-center justify-around text-blue-gray-900">
         <div className="flex items-center">
           <Typography className="">
@@ -70,8 +70,8 @@ export function NavbarDefault() {
             href="#"
             className="mx-5 cursor-pointer py-1.5 font-bold text-2xl"
           >
-            কিশালয় বিদ্যানিকেতন
-            <Typography className="text-sm bg-gray-500 rounded-full mx-10 px-3 ">
+            কিশলয় বিদ্যানিকেতন
+            <Typography className="text-sm  bg-gray-500 rounded-full mx-10 px-3 ">
               প্লে-গ্রুপ থেকে দশম শ্রেণী
             </Typography>
           </Typography>

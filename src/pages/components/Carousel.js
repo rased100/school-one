@@ -41,7 +41,7 @@ const CarouselComponent = () => {
               className=" cursor-pointer font-bold text-5xl sm:text-7xl text-white"
               style={{ textShadow: "5px 5px 50px black" }}
             >
-              কিশালয় বিদ্যানিকেতন
+              কিশলয় বিদ্যানিকেতন
             </Typography>
             <div
               // className=""
@@ -81,7 +81,7 @@ const CarouselComponent = () => {
               className=" cursor-pointer font-bold text-5xl sm:text-7xl text-white"
               style={{ textShadow: "5px 5px 50px black" }}
             >
-              কিশালয় বিদ্যানিকেতন
+              কিশলয় বিদ্যানিকেতন
             </Typography>
             <div
               // className=""
@@ -121,7 +121,7 @@ const CarouselComponent = () => {
               className=" cursor-pointer font-bold text-5xl sm:text-7xl text-white"
               style={{ textShadow: "5px 5px 50px black" }}
             >
-              কিশালয় বিদ্যানিকেতন
+              কিশলয় বিদ্যানিকেতন
             </Typography>
             <div
               // className=""
@@ -161,7 +161,7 @@ const CarouselComponent = () => {
               className=" cursor-pointer font-bold text-5xl sm:text-7xl text-white"
               style={{ textShadow: "5px 5px 50px black" }}
             >
-              কিশালয় বিদ্যানিকেতন
+              কিশলয় বিদ্যানিকেতন
             </Typography>
             <div
               // className=""

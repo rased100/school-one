@@ -49,7 +49,7 @@ const Gallery = () => {
     },
   ];
   return (
-    <div className="text-white bg-gray-300">
+    <div className="text-white">
       <div className="container mx-auto p-10">
         <h1 className="lg:text-5xl text-4xl font-bold text-black my-5 ">
           Photo Gallery

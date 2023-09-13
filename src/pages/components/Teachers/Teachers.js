@@ -86,7 +86,7 @@ const Teachers = () => {
     },
   ];
   return (
-    <div className="container mx-auto lg:mt-20 mt-10 text-info px-10 py-10 bg-gray-200">
+    <div className="text-info px-10 py-10 bg-gray-200">
       {/* <h4 className="text-primary text-lg font-bold mb-5">infoS</h4> */}
       <h1 className="lg:text-5xl text-4xl font-bold">Our Teachers</h1>
       <div className="grid lg:grid-cols-3 grid-cols-1 md:grid-cols-2 gap-5 justify-between lg:mt-10 mt-5">

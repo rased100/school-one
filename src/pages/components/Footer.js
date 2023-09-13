@@ -2,6 +2,7 @@ import React from "react";
 // import logo from "../../assets/logo-1.png";
 import logo from "../../assets/logo-2.png";
 import { Typography } from "@material-tailwind/react";
+import "./Footer.css";
 
 const Footer = () => {
   const LINKS = [
@@ -45,7 +46,7 @@ const Footer = () => {
       ],
     },
     {
-      title: "Contact Info",
+      title: "Contact",
       items: [
         { label: "Mirpur-13", link: "#" },
         { label: "DHAKA-1216", link: "#" },
@@ -57,7 +58,10 @@ const Footer = () => {
 
   const currentYear = new Date().getFullYear();
   return (
-    <footer className="w-full  pt-20 bg-[#124559]">
+    // <footer className="w-full  pt-20 bg-[#124559]">
+    // <footer className="w-full  pt-20 bg-[#ff006e]">
+    // <footer className="w-full  pt-20 bg-[#1d2d44]"> like
+    <footer className="w-full  pt-20 bg-[#003f88] gradient-background">
       {/* <div className=" w-full  "> */}
       <div className="w-full grid grid-cols-1  lg:grid-cols-3 ">
         <div
@@ -70,7 +74,7 @@ const Footer = () => {
             variant="h5"
             className="mb-6 text-2xl font-bold text-white"
           >
-            কিশালয় বিদ্যানিকেতন
+            কিশলয় বিদ্যানিকেতন
           </Typography>
           <Typography className="">
             <img
@@ -88,7 +92,7 @@ const Footer = () => {
                 <Typography
                   variant="small"
                   color="blue-gray"
-                  className="mb-3 font-medium opacity-50  text-white"
+                  className="mb-3 font-medium opacity-60  text-white"
                 >
                   {title}
                 </Typography>
@@ -118,7 +122,7 @@ const Footer = () => {
           variant="small"
           className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0 text-white"
         >
-          &copy; {currentYear} <a href="#">কিশালয় বিদ্যানিকেতন</a>. All Rights
+          &copy; {currentYear} <a href="#">কিশলয় বিদ্যানিকেতন</a>. All Rights
           Reserved.
         </Typography>
         <div className="flex gap-4 text-blue-gray-900 sm:justify-center">

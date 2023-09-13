@@ -6,10 +6,10 @@ const GalleryCard = ({ img }) => {
       // data-aos="zoom-in"
       // data-aos-duration="2000"
       //
-      className="card w-full bg-base-100 shadow-xl rounded-xl"
+      className="card w-full bg-base-100 shadow-xl rounded-md"
     >
-      <figure className="px-5 py-5">
-        {<img src={img} alt={img} className="rounded-xl" />}
+      <figure className="">
+        {<img src={img} alt={img} className="rounded-md" />}
       </figure>
     </div>
   );
