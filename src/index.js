@@ -5,13 +5,17 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "aos/dist/aos.css"; // Import the CSS for animations
 import AOS from "aos";
+import { RouterProvider } from "react-router-dom";
+import router from "./pages/router/router";
 
 AOS.init(); // Initialize AOS
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router}>
+      <App />
+    </RouterProvider>
   </React.StrictMode>
 );
 

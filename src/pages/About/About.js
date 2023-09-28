@@ -1,14 +1,17 @@
 import React from "react";
+import { NavbarDefault } from "../nav/Navigation";
+import Footer from "../components/Footer";
 import about from "../../assets/logo-2.png";
 
-const AboutUs = () => {
+const About = () => {
   return (
     <div className="">
-      <h2 className="text-black bg-[#124559] py-3 text-white text-center font-bold text-2xl rounded-t-lg">
-        আমাদের সম্পর্কে
-      </h2>
-      <div className="items-center grid grid-cols-1 xl:grid-cols-3 gap-1">
+      <NavbarDefault />
+      <div className="items-center grid grid-cols-1 xl:grid-cols-3 gap-1 container mx-auto">
         <div className="xl:col-span-2">
+          <h2 className="text-black  py-3 text-black text-center font-bold text-2xl rounded-t-lg">
+            আমাদের সম্পর্কে
+          </h2>
           <p className=" text-black text-left p-3">
             কিশলয় বিদ্যানিকেতন বাংলাদেশের একটি সুনামধন্য শিক্ষা প্রতিষ্ঠান।
             আমরা প্রতিটি শিশুকে অনন্য হিসাবে বিবেচনা করি এবং তাই আমরা আমাদের
@@ -25,8 +28,9 @@ const AboutUs = () => {
           <img src={about} alt="" className="p-2 rounded-3xl aboutImage" />
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
 
-export default AboutUs;
+export default About;

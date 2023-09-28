@@ -8,6 +8,7 @@ import {
 } from "@material-tailwind/react";
 import logo from "../../assets/logo-2.png";
 import "./Navigation.css";
+import { Link } from "react-router-dom";
 
 export function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
@@ -27,9 +28,11 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#" className="flex items-center hover:text-blue-500">
+        <Link to="/" className="flex items-center hover:text-blue-500">
           Home
-        </a>
+        </Link>
+        {/* <a href="#" className="flex items-center hover:text-blue-500">
+        </a> */}
       </Typography>
       <Typography
         as="li"
@@ -37,9 +40,12 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#About" className="flex items-center hover:text-blue-500">
+        <Link to="/about" className="flex items-center hover:text-blue-500">
+          About
+        </Link>
+        {/* <a href="#About" className="flex items-center hover:text-blue-500">
           About Us
-        </a>
+        </a> */}
       </Typography>
       <Typography
         as="li"
