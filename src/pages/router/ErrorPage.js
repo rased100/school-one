@@ -9,7 +9,10 @@ const ErrorPage = () => {
     <div className="flex flex-col h-screen justify-center items-center">
       <div id="error-page" className="text-center">
         <h1 className="text-3xl font-semibold">Oops!</h1>
-        <p className="text-lg mb-4">Sorry, an unexpected error has occurred.</p>
+        <p className="text-lg mb-0">404 - Page Not Found</p>
+        <p className="text-lg mb-4">
+          The page you are looking for does not exist.
+        </p>
         <p className="text-sm">
           <i>{error ? error.statusText || error.message : ""}</i>
         </p>

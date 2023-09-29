@@ -6,7 +6,7 @@ import about from "../../assets/logo-2.png";
 const About = () => {
   return (
     <div className="">
-      <NavbarDefault />
+      {/* <NavbarDefault /> */}
       <div className="items-center grid grid-cols-1 xl:grid-cols-3 gap-1 container mx-auto">
         <div className="xl:col-span-2">
           <h2 className="text-black  py-3 text-black text-center font-bold text-2xl rounded-t-lg">
@@ -28,7 +28,7 @@ const About = () => {
           <img src={about} alt="" className="p-2 rounded-3xl aboutImage" />
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

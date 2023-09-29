@@ -4,17 +4,48 @@ import Home from "../home/Home";
 import ErrorPage from "./ErrorPage";
 import About from "../About/About";
 import { NavbarDefault } from "../nav/Navigation";
+import Layout from "../components/Layout";
+import Login from "../auth/Login/Login";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
-    errorElement: <ErrorPage />,
+    element: (
+      <Layout>
+        <Home />
+      </Layout>
+    ),
+    errorElement: (
+      <Layout>
+        <ErrorPage />
+      </Layout>
+    ),
   },
   {
     path: "/about",
-    element: <About />,
-    errorElement: <ErrorPage />,
+    element: (
+      <Layout>
+        <About />
+      </Layout>
+    ),
+    errorElement: (
+      <Layout>
+        <ErrorPage />
+      </Layout>
+    ),
+  },
+  {
+    path: "/login",
+    element: (
+      <Layout>
+        <Login />
+      </Layout>
+    ),
+    errorElement: (
+      <Layout>
+        <ErrorPage />
+      </Layout>
+    ),
   },
 ]);
 
