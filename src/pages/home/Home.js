@@ -7,6 +7,7 @@ import Location from "../components/Location";
 import Footer from "../components/Footer";
 import Gallery from "../components/PhotoGallery/Gallery";
 import Headers from "../components/Headers";
+import Login from "../auth/Login/Login";
 
 const Home = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const Home = () => {
   return (
     <div className="">
       <NavbarDefault />
+      <Login />
       <CarouselComponent />
       <Headers />
       <Teachers />

@@ -7,15 +7,18 @@ import "aos/dist/aos.css"; // Import the CSS for animations
 import AOS from "aos";
 import { RouterProvider } from "react-router-dom";
 import router from "./pages/router/router";
+import AuthProvider from "./contexts/AuthProvider";
 
 AOS.init(); // Initialize AOS
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router}>
-      <App />
-    </RouterProvider>
+    <AuthProvider>
+      <RouterProvider router={router}>
+        <App />
+      </RouterProvider>
+    </AuthProvider>
   </React.StrictMode>
 );
 
