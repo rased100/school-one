@@ -1,5 +1,7 @@
 .navigation-background {
   background: linear-gradient(to right, #ff006e, #7209b7);
-  /* background: linear-gradient(to right, #023e8a, #ff0a54); */
   /* bg-[#ff006e] sir choice */
+}
+.button-primary {
+  background: linear-gradient(to right, #7209b7, #ff006e);
 }

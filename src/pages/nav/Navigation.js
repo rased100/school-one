@@ -82,9 +82,12 @@ export function NavbarDefault() {
             className="p-1 font-normal"
             onClick={logout}
           >
-            <Button variant="outlined" size="sm">
-              <p className="text-white">Logout</p>
-            </Button>
+            <button
+              type="button"
+              className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-4 py-1.5 text-center"
+            >
+              Logout
+            </button>
           </Typography>
         </>
       ) : (
@@ -95,9 +98,12 @@ export function NavbarDefault() {
           className="p-1 font-normal"
         >
           <Link to="/login" className="flex items-center hover:text-blue-500">
-            <Button variant="outlined" size="sm">
-              <p className="text-white">Login</p>
-            </Button>
+            <button
+              type="button"
+              className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-4 py-1.5 text-center"
+            >
+              Login
+            </button>
           </Link>
         </Typography>
       )}

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./NavbarTailwind.css";
 
 const NavbarTailwind = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
@@ -195,7 +196,7 @@ const NavbarTailwind = () => {
   };
 
   return (
-    <div className="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800">
+    <div className="w-full text-gray-700 bg-white dark-mode:text-gray-200 dark-mode:bg-gray-800 ">
       <div className="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <nav className="flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-center md:flex-row">
           {dropdownItems.map((item, index) => (
@@ -205,7 +206,11 @@ const NavbarTailwind = () => {
               onMouseEnter={() => toggleDropdown(index)}
               onMouseLeave={() => toggleDropdown(null)}
             >
-              <button className="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+              <button
+                className="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-white focus:text-gray-900  focus:bg-gray-200 focus:outline-none focus:shadow-outline hover:bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700"
+
+                // className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-4 py-1.5 text-center"
+              >
                 <span>{item.label}</span>
                 <svg
                   fill="currentColor"
@@ -226,11 +231,11 @@ const NavbarTailwind = () => {
                   className="absolute right-0 mt-0 origin-top-right rounded-md shadow-lg md:w-48"
                   style={{ zIndex: 1000 }}
                 >
-                  <div className="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
+                  <div className="px-2 py-2  rounded-md shadow dark-mode:bg-gray-800 bg-gradient-to-r from-rose-600 via-purple-700 to-purple-700">
                     {item.links.map((link, linkIndex) => (
                       <a
                         key={linkIndex}
-                        className="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                        className="block px-4 py-2 mt-2 text-sm font-semibold  rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-white focus:bg-gray-200 focus:outline-none focus:shadow-outline text-white"
                         href="#"
                       >
                         {link}
