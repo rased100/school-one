@@ -11,91 +11,172 @@ const Navbar = () => {
     {
       name: "About",
       subLinks: [
-        "SubLink 1.1",
-        "SubLink 1.2",
-        "SubLink 1.3",
-        "SubLink 1.4",
-        "SubLink 1.5",
+        <Link to="/about" key="AboutSchool">
+          About us
+        </Link>,
+        <Link to="" key="SubLink1">
+          SubLink 1.2
+        </Link>,
+        <Link to="" key="SubLink2">
+          SubLink 1.3
+        </Link>,
+        <Link to="" key="SubLink3">
+          SubLink 1.4
+        </Link>,
+        <Link to="" key="SubLink4">
+          SubLink 1.5
+        </Link>,
       ],
     },
     {
       name: "Administration",
       subLinks: [
-        "SubLink 2.1",
-        "SubLink 2.2",
-        "SubLink 2.3",
-        "SubLink 2.4",
-        "SubLink 2.5",
+        <Link to="" key="SubLink2.1">
+          SubLink 2.1
+        </Link>,
+        <Link to="" key="SubLink2.2">
+          SubLink 2.2
+        </Link>,
+        <Link to="" key="SubLink2.3">
+          SubLink 2.3
+        </Link>,
+        <Link to="" key="SubLink2.4">
+          SubLink 2.4
+        </Link>,
+        <Link to="" key="SubLink2.5">
+          SubLink 2.5
+        </Link>,
       ],
     },
     {
       name: "Academic",
       subLinks: [
-        "SubLink 3.1",
-        "SubLink 3.2",
-        "SubLink 3.3",
-        "SubLink 3.4",
-        "SubLink 3.5",
+        <Link to="" key="SubLink3.1">
+          SubLink 3.1
+        </Link>,
+        <Link to="" key="SubLink3.2">
+          SubLink 3.2
+        </Link>,
+        <Link to="" key="SubLink3.3">
+          SubLink 3.3
+        </Link>,
+        <Link to="" key="SubLink3.4">
+          SubLink 3.4
+        </Link>,
+        <Link to="" key="SubLink3.5">
+          SubLink 3.5
+        </Link>,
       ],
     },
     {
       name: "Admission",
       subLinks: [
-        "SubLink 4.1",
-        "SubLink 4.2",
-        "SubLink 4.3",
-        "SubLink 4.4",
-        "SubLink 4.5",
+        <Link to="" key="SubLink4.1">
+          SubLink 4.1
+        </Link>,
+        <Link to="" key="SubLink4.2">
+          SubLink 4.2
+        </Link>,
+        <Link to="" key="SubLink4.3">
+          SubLink 4.3
+        </Link>,
+        <Link to="" key="SubLink4.4">
+          SubLink 4.4
+        </Link>,
+        <Link to="" key="SubLink4.5">
+          SubLink 4.5
+        </Link>,
       ],
     },
     {
       name: "Result",
       subLinks: [
-        "SubLink 5.1",
-        "SubLink 5.2",
-        "SubLink 5.3",
-        "SubLink 5.4",
-        "SubLink 5.5",
+        <Link to="" key="SubLink5.1">
+          SubLink 5.1
+        </Link>,
+        <Link to="" key="SubLink5.2">
+          SubLink 5.2
+        </Link>,
+        <Link to="" key="SubLink5.3">
+          SubLink 5.3
+        </Link>,
+        <Link to="" key="SubLink5.4">
+          SubLink 5.4
+        </Link>,
+        <Link to="" key="SubLink5.5">
+          SubLink 5.5
+        </Link>,
       ],
     },
     {
       name: "Co-Curricular",
       subLinks: [
-        "SubLink 6.1",
-        "SubLink 6.2",
-        "SubLink 6.3",
-        "SubLink 6.4",
-        "SubLink 6.5",
+        <Link to="" key="SubLink6.1">
+          SubLink 6.1
+        </Link>,
+        <Link to="" key="SubLink6.2">
+          SubLink 6.2
+        </Link>,
+        <Link to="" key="SubLink6.3">
+          SubLink 6.3
+        </Link>,
+        <Link to="" key="SubLink6.4">
+          SubLink 6.4
+        </Link>,
+        <Link to="" key="SubLink6.5">
+          SubLink 6.5
+        </Link>,
       ],
     },
     {
       name: "Facilities",
       subLinks: [
-        "SubLink 7.1",
-        "SubLink 7.2",
-        "SubLink 7.3",
-        "SubLink 7.4",
-        "SubLink 7.5",
+        <Link to="" key="SubLink7.1">
+          SubLink 7.1
+        </Link>,
+        <Link to="" key="SubLink7.2">
+          SubLink 7.2
+        </Link>,
+        <Link to="" key="SubLink7.3">
+          SubLink 7.3
+        </Link>,
+        <Link to="" key="SubLink7.4">
+          SubLink 7.4
+        </Link>,
+        <Link to="" key="SubLink7.5">
+          SubLink 7.5
+        </Link>,
       ],
     },
     {
       name: "Library",
       subLinks: [
-        "SubLink 8.1",
-        "SubLink 8.2",
-        "SubLink 8.3",
-        "SubLink 8.4",
-        "SubLink 8.5",
+        <Link to="" key="SubLink8.1">
+          SubLink 8.1
+        </Link>,
+        <Link to="" key="SubLink8.2">
+          SubLink 8.2
+        </Link>,
+        <Link to="" key="SubLink8.3">
+          SubLink 8.3
+        </Link>,
+        <Link to="" key="SubLink8.4">
+          SubLink 8.4
+        </Link>,
+        <Link to="" key="SubLink8.5">
+          SubLink 8.5
+        </Link>,
       ],
     },
     {
-      name: "Gallery ",
+      name: "Gallery",
       subLinks: [
-        "SubLink 9.1",
-        "SubLink 9.2",
-        "SubLink 9.3",
-        "SubLink 9.4",
-        "SubLink 9.5",
+        <Link to="" key="Photos">
+          Photos
+        </Link>,
+        <Link to="" key="Vodeos">
+          Videos
+        </Link>,
       ],
     },
   ];
@@ -128,19 +209,18 @@ const Navbar = () => {
             </a>
             <div
               className={`sub-links ${isSubLinksActive(index)}`}
-              style={{ backgroundColor: "#333" }} // Change background color as desired
+              style={{ backgroundColor: "#333" }}
             >
               {link.subLinks.map((subLink, subIndex) => (
                 <Link
                   key={subIndex}
                   to="#"
-                  className="block p-2 hover:bg-gray-700 transition-colors flex items-center"
+                  className="block p-2 hover:bg-gray-700 transition-colors"
                 >
-                  <FontAwesomeIcon
-                    icon={faArrowRight}
-                    className="mr-2" // Adjust margin as needed
-                  />
-                  {subLink}
+                  <div className="flex flex-row items-center">
+                    <FontAwesomeIcon icon={faArrowRight} className="mr-2" />
+                    {subLink}
+                  </div>
                 </Link>
               ))}
             </div>
