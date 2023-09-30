@@ -6,6 +6,7 @@ import About from "../About/About";
 import { NavbarDefault } from "../nav/Navigation";
 import Layout from "../components/Layout";
 import Login from "../auth/Login/Login";
+import Dashboard from "../dashboard/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,19 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Login />
+      </Layout>
+    ),
+    errorElement: (
+      <Layout>
+        <ErrorPage />
+      </Layout>
+    ),
+  },
+  {
+    path: "/dashboard",
+    element: (
+      <Layout>
+        <Dashboard />
       </Layout>
     ),
     errorElement: (

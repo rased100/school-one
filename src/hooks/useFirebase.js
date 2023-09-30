@@ -11,7 +11,7 @@ import initializeFirebase from "../pages/auth/firebase/firebase.init";
 initializeFirebase();
 
 const useFirebase = () => {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [authError, setAuthError] = useState("");
 
@@ -25,7 +25,6 @@ const useFirebase = () => {
         const destination = location?.state?.from || "/";
         history.replace(destination);
         setAuthError("");
-        console.log("Login successful");
       })
       .catch((error) => {
         setAuthError(error.message);
@@ -42,7 +41,7 @@ const useFirebase = () => {
         const uid = user.uid;
         setUser(user);
       } else {
-        setUser({});
+        setUser(null);
       }
       setIsLoading(false);
     });

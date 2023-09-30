@@ -1,0 +1,46 @@
+/* Navbar.css */
+.navbar {
+  background-color: #333;
+  position: relative; /* Add this line to make the navbar a stacking context */
+  z-index: 1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  position: relative;
+  color: #fff;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sub-links {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  padding: 5px 0;
+  width: 150px; /* Adjust the width as needed */
+}
+
+.sub-links a {
+  display: block;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.sub-links a:hover {
+  background-color: #555;
+}
+
+.sub-links.block {
+  display: block;
+}

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import useAuth from "../../../hooks/useAuth";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -16,11 +18,25 @@ const Login = () => {
     setPassword(e.target.value);
   };
 
-  const handleSubmit = (e) => {
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   // Add your login logic here
+  //   loginUser(email, password);
+  // };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Add your login logic here
-    loginUser(email, password);
+    try {
+      // Attempt to login the user
+      await loginUser(email, password);
+      // If login is successful, navigate to the home page
+      navigate("/"); // Replace "/" with the path to your home page
+    } catch (error) {
+      // Handle login errors here
+      console.error("Login Error:", error);
+    }
   };
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">

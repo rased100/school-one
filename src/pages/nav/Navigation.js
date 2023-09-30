@@ -9,9 +9,11 @@ import {
 import logo from "../../assets/logo-2.png";
 import "./Navigation.css";
 import { Link } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 export function NavbarDefault() {
   const [openNav, setOpenNav] = React.useState(false);
+  const { user, logout } = useAuth();
 
   React.useEffect(() => {
     window.addEventListener(
@@ -57,16 +59,48 @@ export function NavbarDefault() {
           Contact
         </a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <Link to="/login" className="flex items-center hover:text-blue-500">
-          Login
-        </Link>
-      </Typography>
+
+      {user ? (
+        <>
+          <Typography
+            as="li"
+            variant="small"
+            color="blue-gray"
+            className="p-1 font-normal"
+          >
+            <Link
+              to="/dashboard"
+              className="flex items-center hover:text-blue-500"
+            >
+              Dashboard
+            </Link>
+          </Typography>
+          <Typography
+            as="li"
+            variant="small"
+            color="blue-gray"
+            className="p-1 font-normal"
+            onClick={logout}
+          >
+            <Button variant="outlined" size="sm">
+              <p className="text-white">Logout</p>
+            </Button>
+          </Typography>
+        </>
+      ) : (
+        <Typography
+          as="li"
+          variant="small"
+          color="blue-gray"
+          className="p-1 font-normal"
+        >
+          <Link to="/login" className="flex items-center hover:text-blue-500">
+            <Button variant="outlined" size="sm">
+              <p className="text-white">Login</p>
+            </Button>
+          </Link>
+        </Typography>
+      )}
     </ul>
   );
 
