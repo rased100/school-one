@@ -42,19 +42,6 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to="/about" className="flex items-center hover:text-blue-500">
-          About
-        </Link>
-        {/* <a href="#About" className="flex items-center hover:text-blue-500">
-          About Us
-        </a> */}
-      </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
         <a href="#Contact" className="flex items-center hover:text-blue-500">
           Contact
         </a>
