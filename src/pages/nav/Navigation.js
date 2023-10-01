@@ -98,12 +98,39 @@ export function NavbarDefault() {
           className="p-1 font-normal"
         >
           <Link to="/login" className="flex items-center hover:text-blue-500">
-            <button
+            {/* <button
               type="button"
               className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-4 py-1.5 text-center"
             >
               Login
-            </button>
+            </button> */}
+            {/* <a
+              href="#_"
+              class="relative px-5 py-2 font-medium text-white group"
+            >
+              <span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-purple-500 group-hover:bg-gradient-to-r from-purple-600 via-purple-700 to-rose-600 group-hover:skew-x-12"></span>
+              <span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-gradient-to-r from-rose-600 via-purple-700 to-purple-600 group-hover:-skew-x-12"></span>
+              <span class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
+              <span class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
+              <span class="relative">Login</span>
+            </a> */}
+            <a
+              href="#_"
+              class="relative inline-flex items-center justify-center px-4 py-1.5 overflow-hidden font-bold rounded-md shadow-2xl group text-white hover:text-black"
+            >
+              <span class="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-50 bg-gradient-to-br from-pink-500 via-purple-600 to-blue-300 group-hover:opacity-100"></span>
+              {/* <!-- Top glass gradient --> */}
+              <span class="absolute top-0 left-0 w-full bg-gradient-to-b from-white to-transparent opacity-5 h-1/3"></span>
+              {/* <!-- Bottom gradient --> */}
+              <span class="absolute bottom-0 left-0 w-full h-1/3 bg-gradient-to-t from-white to-transparent opacity-5"></span>
+              {/* <!-- Left gradient --> */}
+              <span class="absolute bottom-0 left-0 w-4 h-full bg-gradient-to-r from-white to-transparent opacity-5"></span>
+              {/* <!-- Right gradient --> */}
+              <span class="absolute bottom-0 right-0 w-4 h-full bg-gradient-to-l from-white to-transparent opacity-5"></span>
+              <span class="absolute inset-0 w-full h-full border border-white rounded-md opacity-10"></span>
+              <span class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-5"></span>
+              <span class="relative ">Login</span>
+            </a>
           </Link>
         </Typography>
       )}
