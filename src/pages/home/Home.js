@@ -5,6 +5,7 @@ import Teachers from "../components/Teachers/Teachers";
 import Location from "../components/Location";
 import Gallery from "../components/PhotoGallery/Gallery";
 import Headers from "../components/Headers";
+import About from "../About/About";
 
 const Home = () => {
   useEffect(() => {
@@ -13,6 +14,7 @@ const Home = () => {
   return (
     <div>
       <CarouselComponent />
+      <About />
       <Headers />
       <Teachers />
       <Gallery />
