@@ -6,6 +6,10 @@ import Location from "../components/Location";
 import Gallery from "../components/PhotoGallery/Gallery";
 import Headers from "../components/Headers";
 import About from "../About/About";
+import HeadTeacher from "../HeadTeacher/HeadTeacher";
+import HeadTeacherTwnd from "../HeadTeacher/HeadTeacherTwnd";
+import TeachersTwnd from "../components/Teachers/TeachersTwnd";
+import TeachersTailwind from "../components/Teachers/TeachersTailwind";
 
 const Home = () => {
   useEffect(() => {
@@ -15,8 +19,12 @@ const Home = () => {
     <div>
       <CarouselComponent />
       <About />
-      <Headers />
-      <Teachers />
+      {/* <Headers /> */}
+      {/* <HeadTeacher /> */}
+      <HeadTeacherTwnd />
+      {/* <Teachers /> */}
+      {/* <TeachersTwnd /> */}
+      <TeachersTailwind />
       <Gallery />
       <Location />
     </div>
