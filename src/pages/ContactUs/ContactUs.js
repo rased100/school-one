@@ -13,6 +13,7 @@ const ContactUs = () => {
           feedback or have inquiries about admissions? Feel free to get in touch
           with us, and we'll be happy to assist you!
         </p>
+
         <form action="#" class="space-y-8">
           <div>
             <label
