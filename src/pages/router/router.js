@@ -7,6 +7,7 @@ import { NavbarDefault } from "../nav/Navigation";
 import Layout from "../components/Layout";
 import Login from "../auth/Login/Login";
 import Dashboard from "../dashboard/Dashboard";
+import ImageGallery from "../components/PhotoGallery/ImageGallery";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,19 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Dashboard />
+      </Layout>
+    ),
+    errorElement: (
+      <Layout>
+        <ErrorPage />
+      </Layout>
+    ),
+  },
+  {
+    path: "/imagegallery",
+    element: (
+      <Layout>
+        <ImageGallery />
       </Layout>
     ),
     errorElement: (

@@ -10,6 +10,8 @@ import HeadTeacher from "../HeadTeacher/HeadTeacher";
 import HeadTeacherTwnd from "../HeadTeacher/HeadTeacherTwnd";
 import TeachersTwnd from "../components/Teachers/TeachersTwnd";
 import TeachersTailwind from "../components/Teachers/TeachersTailwind";
+import ImagesTwnd from "../components/PhotoGallery/ImageGallery";
+import ImageGallery from "../components/PhotoGallery/ImageGallery";
 
 const Home = () => {
   useEffect(() => {
@@ -25,7 +27,8 @@ const Home = () => {
       {/* <Teachers /> */}
       {/* <TeachersTwnd /> */}
       <TeachersTailwind />
-      <Gallery />
+      {/* <Gallery /> */}
+      <ImageGallery />
       <Location />
     </div>
   );

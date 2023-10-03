@@ -183,7 +183,7 @@ const TeachersTailwind = () => {
                     alt="Bonnie Avatar"
                   />
                 </a>
-                <div className="p-5">
+                <div className="p-5 ">
                   <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                     <a href="#">{info.name}</a>
                   </h3>
