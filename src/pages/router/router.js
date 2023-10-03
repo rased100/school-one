@@ -8,6 +8,7 @@ import Layout from "../components/Layout";
 import Login from "../auth/Login/Login";
 import Dashboard from "../dashboard/Dashboard";
 import ImageGallery from "../components/PhotoGallery/ImageGallery";
+import ContactUs from "../ContactUs/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -67,6 +68,19 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <ImageGallery />
+      </Layout>
+    ),
+    errorElement: (
+      <Layout>
+        <ErrorPage />
+      </Layout>
+    ),
+  },
+  {
+    path: "/contactUs",
+    element: (
+      <Layout>
+        <ContactUs />
       </Layout>
     ),
     errorElement: (

@@ -42,9 +42,9 @@ export function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <a href="#Contact" className="flex items-center hover:text-blue-500">
+        <Link to="/contactUs" className="flex items-center hover:text-blue-500">
           Contact
-        </a>
+        </Link>
       </Typography>
 
       {user ? (

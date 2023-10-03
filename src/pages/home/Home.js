@@ -12,6 +12,7 @@ import TeachersTwnd from "../components/Teachers/TeachersTwnd";
 import TeachersTailwind from "../components/Teachers/TeachersTailwind";
 import ImagesTwnd from "../components/PhotoGallery/ImageGallery";
 import ImageGallery from "../components/PhotoGallery/ImageGallery";
+import ContactUs from "../ContactUs/ContactUs";
 
 const Home = () => {
   useEffect(() => {
@@ -29,7 +30,8 @@ const Home = () => {
       <TeachersTailwind />
       {/* <Gallery /> */}
       <ImageGallery />
-      <Location />
+      <ContactUs />
+      {/* <Location /> */}
     </div>
   );
 };
