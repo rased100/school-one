@@ -3,14 +3,14 @@ import hTeacher from "../../assets/headTeacher.jpg";
 
 const HeadTeacherTwnd = () => {
   return (
-    <div className="hero min-h-screen bg-secondary">
+    <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img src={hTeacher} className="max-w-xs  rounded-lg shadow-2xl" />
         <div>
-          <h1 className="text-5xl font-bold text-black">
+          <h1 className="text-5xl font-bold text-white">
             The Principal's Message
           </h1>
-          <p className="py-6 text-black md:pr-5">
+          <p className="py-6 text-white md:pr-5">
             In the name of Allah, the Most Gracious, the Most Merciful, <br />{" "}
             "Kishalaya Biddaniketan," this educational institution, was
             established in 1994. It began with 35 students and has since grown
