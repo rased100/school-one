@@ -103,14 +103,11 @@ const NavbarTailwind = () => {
     {
       label: "Result",
       links: [
-        <Link to="" key="SubLink5.1">
-          PSC Result
-        </Link>,
-        <Link to="" key="SubLink5.2">
-          JSC Result
+        <Link to="http://www.educationboardresults.gov.bd/" key="SubLink5.1">
+          মাধ্যমিক পরীক্ষার ফলাফল
         </Link>,
         <Link to="" key="SubLink5.3">
-          SSC Result
+          কিশলয় পরীক্ষার ফলাফল
         </Link>,
       ],
     },
@@ -154,20 +151,40 @@ const NavbarTailwind = () => {
     //     </Link>,
     //   ],
     // },
+    // {
+    //   label: "Library",
+    //   links: [
+    //     <Link to="" key="SubLink8.1">
+    //       Debating Club
+    //     </Link>,
+    //     <Link to="" key="SubLink8.2">
+    //       Readers & Writers Club
+    //     </Link>,
+    //     <Link to="" key="SubLink8.3">
+    //       Extempore Speech Club
+    //     </Link>,
+    //     <Link to="" key="SubLink8.4">
+    //       Presentation Club
+    //     </Link>,
+    //   ],
+    // },
     {
-      label: "Library",
+      label: "Govt",
       links: [
-        <Link to="" key="SubLink8.1">
-          Debating Club
+        <Link to="https://www.dhakaeducationboard.gov.bd/" key="SubLink8.1">
+          শিক্ষা বোর্ড, ঢাকা
         </Link>,
-        <Link to="" key="SubLink8.2">
-          Readers & Writers Club
+        <Link to="https://moedu.gov.bd/" key="SubLink8.2">
+          শিক্ষা মন্ত্রণালয়
         </Link>,
-        <Link to="" key="SubLink8.3">
-          Extempore Speech Club
+        <Link to="https://dshe.gov.bd/" key="SubLink8.3">
+          মাধ্যমিক ও উচ্চ শিক্ষা অধিদপ্তর
         </Link>,
-        <Link to="" key="SubLink8.4">
-          Presentation Club
+        <Link to="https://bteb.gov.bd/" key="SubLink8.4">
+          বাংলাদেশ কারিগরি শিক্ষা বোর্ড
+        </Link>,
+        <Link to="https://www.dhakaeducationboard.gov.bd/" key="SubLink8.4">
+          মাধ্যমিক ও উচ্চমাধ্যমিক শিক্ষা বোর্ড, ঢাকা
         </Link>,
       ],
     },

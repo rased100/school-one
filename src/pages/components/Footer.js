@@ -14,16 +14,16 @@ const Footer = () => {
           link: "https://bteb.gov.bd/",
         },
         {
+          label: "মাধ্যমিক ও উচ্চমাধ্যমিক শিক্ষা বোর্ড",
+          link: "http://www.educationboard.gov.bd/",
+        },
+        {
           label: "মাধ্যমিক ও উচ্চমাধ্যমিক শিক্ষা বোর্ড, ঢাকা",
           link: "https://www.dhakaeducationboard.gov.bd/",
         },
         {
-          label: "Intermediate and Secondary Result",
+          label: "মাধ্যমিক ও উচ্চ মাধ্যমিক পরীক্ষার ফলাফল",
           link: "http://www.educationboardresults.gov.bd/",
-        },
-        {
-          label: "Intermediate and Secondary Education Boards",
-          link: "http://www.educationboard.gov.bd/",
         },
       ],
     },
@@ -48,10 +48,11 @@ const Footer = () => {
     {
       title: "Contact",
       items: [
-        { label: "Mirpur-13", link: "#" },
-        { label: "DHAKA-1216", link: "#" },
-        { label: "+8801700000000", link: "#" },
-        { label: "kisaloy@gmail.com", link: "#" },
+        { label: "Section 13, Block B, Road 9", link: "#" },
+        { label: "House 43,Mirpur, Kafrul, Dhaka, 1216", link: "#" },
+        // { label: "DHAKA-1216", link: "#" },
+        { label: "+8801552307304", link: "#" },
+        { label: "kishalayabiddaniketan1994@gmail.com", link: "#" },
       ],
     },
   ];
