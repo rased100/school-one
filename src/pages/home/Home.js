@@ -13,13 +13,15 @@ import TeachersTailwind from "../components/Teachers/TeachersTailwind";
 import ImagesTwnd from "../components/PhotoGallery/ImageGallery";
 import ImageGallery from "../components/PhotoGallery/ImageGallery";
 import ContactUs from "../ContactUs/ContactUs";
+import CarouselTwnd from "../carousel/CarouselTwnd";
 
 const Home = () => {
   useEffect(() => {
     AOS.init();
   }, []);
   return (
-    <div>
+    <div className="flex flex-col">
+      {/* <CarouselTwnd /> */}
       <CarouselComponent />
       <About />
       {/* <Headers /> */}
