@@ -14,6 +14,7 @@ import ImagesTwnd from "../components/PhotoGallery/ImageGallery";
 import ImageGallery from "../components/PhotoGallery/ImageGallery";
 import ContactUs from "../ContactUs/ContactUs";
 import CarouselTwnd from "../carousel/CarouselTwnd";
+import NoticeBoard from "../NoticeBoard/NoticeBoard";
 
 const Home = () => {
   useEffect(() => {
@@ -23,15 +24,16 @@ const Home = () => {
     <div className="flex flex-col">
       {/* <CarouselTwnd /> */}
       <CarouselComponent />
-      <About />
       {/* <Headers /> */}
       {/* <HeadTeacher /> */}
       <HeadTeacherTwnd />
+      <NoticeBoard />
       {/* <Teachers /> */}
       {/* <TeachersTwnd /> */}
       <TeachersTailwind />
       {/* <Gallery /> */}
       <ImageGallery />
+      <About />
       <ContactUs />
       {/* <Location /> */}
     </div>

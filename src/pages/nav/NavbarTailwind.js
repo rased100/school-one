@@ -217,7 +217,7 @@ const NavbarTailwind = () => {
           {/* <button
             className="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0  hover:text-white focus:text-gray-900  focus:bg-gray-200 focus:outline-none focus:shadow-outline hover:bg-gradient-to-r from-rose-600 via-purple-700 to-purple-700"
 
-            // className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-4 py-1.5 text-center"
+            // className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 focus:ring-purple-800 font-medium rounded-lg text-sm px-4 py-1.5 text-center"
           >
             <Link to="/" className="flex items-center">
               Home
@@ -233,7 +233,7 @@ const NavbarTailwind = () => {
               <button
                 className="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0  hover:text-white focus:text-gray-900  focus:bg-gray-200 focus:outline-none focus:shadow-outline hover:bg-gradient-to-r from-rose-600 via-purple-700 to-purple-700"
 
-                // className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-4 py-1.5 text-center"
+                // className="text-white bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-purple-300 focus:ring-purple-800 font-medium rounded-lg text-sm px-4 py-1.5 text-center"
               >
                 <span>{item.label}</span>
                 <svg

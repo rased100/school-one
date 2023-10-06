@@ -7,7 +7,7 @@ const SocialLinksTwnd = () => {
         <li>
           <a
             href="#"
-            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            class="text-gray-500 hover:text-gray-900 hover:text-white"
           >
             <svg
               class="w-5 h-5"
@@ -26,7 +26,7 @@ const SocialLinksTwnd = () => {
         <li>
           <a
             href="#"
-            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            class="text-gray-500 hover:text-gray-900 hover:text-white"
           >
             <svg
               class="w-5 h-5"
@@ -41,7 +41,7 @@ const SocialLinksTwnd = () => {
         {/* <li>
           <a
             href="#"
-            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            class="text-gray-500 hover:text-gray-900 hover:text-white"
           >
             <svg
               class="w-5 h-5"
@@ -60,7 +60,7 @@ const SocialLinksTwnd = () => {
         <li>
           <a
             href="#"
-            class="text-gray-500 hover:text-gray-900 dark:hover:text-white"
+            class="text-gray-500 hover:text-gray-900 hover:text-white"
           >
             <svg
               class="w-5 h-5"

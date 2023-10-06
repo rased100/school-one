@@ -15,14 +15,14 @@ import { Link } from "react-router-dom";
 const ImageGallery = () => {
   const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
   return (
-    <div className="py-20">
+    <div className="py-20 bg-gray-900">
       {/* <h1 className="text-3xl font-bold text-center my-4 text-black py-10">
         Image Gallery
       </h1> */}
-      <h2 class="mb-4 text-4xl tracking-tight font-bold text-center text-gray-900  text-black">
+      <h2 class="mb-4 text-4xl tracking-tight font-bold text-center text-white  text-black">
         Image Gallery
       </h2>
-      <p class="mb-5 px-5 text-center  text-black sm:text-xl md:px-32">
+      <p class="mb-5 px-5 text-center  text-gray-400 sm:text-xl md:px-32">
         Explore our image gallery to view captivating visuals from our
         collection. From memorable events to stunning landscapes, our gallery
         offers a visual journey worth exploring. Enjoy the images and let them

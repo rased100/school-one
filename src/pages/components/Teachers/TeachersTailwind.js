@@ -136,20 +136,20 @@ const TeachersTailwind = () => {
   ];
   return (
     <div>
-      <div className="bg-white dark:bg-gray-900">
+      <div className="bg-gray-800">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
           <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 text-white">
               Our Teachers
             </h2>
-            <p className="font-light text-gray-500 lg:mb-16 sm:text-xl dark:text-gray-400">
+            <p className="font-light text-gray-500 lg:mb-16 sm:text-xl text-gray-400">
               A teacher is a professional who plays a crucial role in the
               education and development of students.
             </p>
           </div>
           <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
             {/*  */}
-            {/* <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+            {/* <div className="items-center bg-gray-50 rounded-lg shadow sm:flex bg-gray-800 border-gray-700">
               <a href="#">
                 <img
                   className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
@@ -158,13 +158,13 @@ const TeachersTailwind = () => {
                 />
               </a>
               <div className="p-5">
-                <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                <h3 className="text-xl font-bold tracking-tight text-gray-900 text-white">
                   <a href="#">Bonnie Green</a>
                 </h3>
-                <span className="text-gray-500 dark:text-gray-400">
+                <span className="text-gray-500 text-gray-400">
                   CEO & Web Developer
                 </span>
-                <p className="mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+                <p className="mt-3 mb-4 font-light text-gray-500 text-gray-400">
                   Bonnie drives the technical strategy of the flowbite platform
                   and brand.
                 </p>
@@ -173,7 +173,7 @@ const TeachersTailwind = () => {
             </div> */}
             {/*  */}
             {teachersinfo.map((info) => (
-              <div className="items-center bg-gray-50 rounded-lg shadow sm:flex dark:bg-gray-800 dark:border-gray-700">
+              <div className="items-center bg-gray-500 rounded-lg shadow sm:flex bg-gray-900 border-gray-700">
                 <a href="#">
                   <img
                     className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg max-w-full h-auto"
@@ -184,13 +184,13 @@ const TeachersTailwind = () => {
                   />
                 </a>
                 <div className="p-5 ">
-                  <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
+                  <h3 className="text-xl font-bold tracking-tight text-gray-900 text-white">
                     <a href="#">{info.name}</a>
                   </h3>
-                  <span className="text-gray-500 dark:text-gray-400">
+                  <span className="text-gray-500 text-gray-400">
                     {info.designation}
                   </span>
-                  <p className="flex mt-3 mb-4 font-light text-gray-500 dark:text-gray-400">
+                  <p className="flex mt-3 mb-4 font-light text-gray-500 text-gray-400">
                     {/* Bonnie drives the technical strategy of the flowbite platform and brand. */}
                     Kishalaya Biddaniketan. House 43, Road 9, Block B, Section
                     13, Mirpur, Dhaka, 1216

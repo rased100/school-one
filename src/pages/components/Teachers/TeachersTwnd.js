@@ -135,13 +135,13 @@ const TeachersTwnd = () => {
     },
   ];
   return (
-    <section class="bg-white dark:bg-gray-900">
+    <section class="bg-white bg-gray-900">
       <div class="container px-6 py-10 mx-auto">
-        <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl dark:text-white">
+        <h1 class="text-3xl font-semibold text-center text-gray-800 capitalize lg:text-4xl text-white">
           Our Teachers
         </h1>
 
-        <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
+        <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 text-gray-300">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt
           ex placeat modi magni quia error alias, adipisci rem similique, at
           omnis eligendi optio eos harum.
@@ -155,11 +155,11 @@ const TeachersTwnd = () => {
               alt=""
             />
 
-            <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">
+            <h1 class="mt-4 text-2xl font-semibold text-gray-700 capitalize text-white group-hover:text-white">
               arthur melo
             </h1>
 
-            <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
+            <p class="mt-2 text-gray-500 capitalize text-gray-300 group-hover:text-gray-300">
               design director
             </p>
             <SocialLinksTwnd />
@@ -172,11 +172,11 @@ const TeachersTwnd = () => {
                 alt=""
               />
 
-              <h1 class="mt-4 text-2xl text-center font-semibold text-gray-700 capitalize dark:text-white group-hover:text-white">
+              <h1 class="mt-4 text-2xl text-center font-semibold text-gray-700 capitalize text-white group-hover:text-white">
                 {info.name}
               </h1>
 
-              <p class="mt-2 text-gray-500 text-center capitalize dark:text-gray-300 group-hover:text-gray-300">
+              <p class="mt-2 text-gray-500 text-center capitalize text-gray-300 group-hover:text-gray-300">
                 {info.designation}
               </p>
               <SocialLinksTwnd />
