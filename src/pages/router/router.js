@@ -6,10 +6,12 @@ import About from "../About/About";
 import { NavbarDefault } from "../nav/Navigation";
 import Layout from "../components/Layout";
 import Login from "../auth/Login/Login";
-import Dashboard from "../dashboard/Dashboard";
 import ImageGallery from "../components/PhotoGallery/ImageGallery";
 import ContactUs from "../ContactUs/ContactUs";
 import LoginTwo from "../auth/Login/LoginTwo";
+import Dashboard from "../dashboard/dashboardPages/Dashboard";
+import DashboardLayout from "../dashboard/DashboardLayout";
+import DbNoticeBoard from "../dashboard/dashboardPages/DbNoticeBoard";
 
 const router = createBrowserRouter([
   {
@@ -64,19 +66,19 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
-  {
-    path: "/dashboard",
-    element: (
-      <Layout>
-        <Dashboard />
-      </Layout>
-    ),
-    errorElement: (
-      <Layout>
-        <ErrorPage />
-      </Layout>
-    ),
-  },
+  // {
+  //   path: "/dashboard",
+  //   element: (
+  //     <Layout>
+  //       <Dashboard />
+  //     </Layout>
+  //   ),
+  //   errorElement: (
+  //     <Layout>
+  //       <ErrorPage />
+  //     </Layout>
+  //   ),
+  // },
   {
     path: "/imagegallery",
     element: (
@@ -102,6 +104,21 @@ const router = createBrowserRouter([
         <ErrorPage />
       </Layout>
     ),
+  },
+
+  {
+    path: "dashboard",
+    element: <DashboardLayout />,
+    children: [
+      {
+        path: "",
+        element: <Dashboard />,
+      },
+      {
+        path: "DbNoticeBoard",
+        element: <DbNoticeBoard />,
+      },
+    ],
   },
 ]);
 
