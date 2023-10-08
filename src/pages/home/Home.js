@@ -15,6 +15,8 @@ import ImageGallery from "../components/PhotoGallery/ImageGallery";
 import ContactUs from "../ContactUs/ContactUs";
 import CarouselTwnd from "../carousel/CarouselTwnd";
 import NoticeBoard from "../NoticeBoard/NoticeBoard";
+import Results from "../results/Results";
+import ResultsTwo from "../results/ResultsTwo";
 
 const Home = () => {
   useEffect(() => {
@@ -31,6 +33,7 @@ const Home = () => {
       {/* <Teachers /> */}
       {/* <TeachersTwnd /> */}
       <TeachersTailwind />
+      <Results />
       {/* <Gallery /> */}
       <ImageGallery />
       <About />

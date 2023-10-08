@@ -136,7 +136,7 @@ const TeachersTailwind = () => {
   ];
   return (
     <div>
-      <div className="bg-gray-800">
+      <div className="bg-gray-900">
         <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
           <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 text-white">
@@ -173,7 +173,7 @@ const TeachersTailwind = () => {
             </div> */}
             {/*  */}
             {teachersinfo.map((info) => (
-              <div className="items-center bg-gray-500 rounded-lg shadow sm:flex bg-gray-900 border-gray-700">
+              <div className="items-center  rounded-lg shadow sm:flex bg-gray-800 border-gray-700">
                 <a href="#">
                   <img
                     className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg max-w-full h-auto"
