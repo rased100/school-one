@@ -6,9 +6,12 @@ const Results = () => {
   return (
     <div className="h-[50vh] flex justify-center items-center dark:bg-gray-800">
       <div className="w-full p-4 text-center bg-white    sm:p-8 dark:bg-gray-800 ">
-        <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
+        {/* <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
           Institute Results
-        </h5>
+        </h5> */}
+        <h2 className="py-10 text-4xl tracking-tight font-extrabold text-gray-900 text-white">
+          Institute Results
+        </h2>
         <p className="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">
           Kishalaya Biddaniketan Institute Results. Download the results today.
         </p>
