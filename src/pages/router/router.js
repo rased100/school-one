@@ -9,6 +9,7 @@ import Login from "../auth/Login/Login";
 import Dashboard from "../dashboard/Dashboard";
 import ImageGallery from "../components/PhotoGallery/ImageGallery";
 import ContactUs from "../ContactUs/ContactUs";
+import LoginTwo from "../auth/Login/LoginTwo";
 
 const router = createBrowserRouter([
   {
@@ -37,11 +38,24 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
+  // {
+  //   path: "/login",
+  //   element: (
+  //     <Layout>
+  //       <Login />
+  //     </Layout>
+  //   ),
+  //   errorElement: (
+  //     <Layout>
+  //       <ErrorPage />
+  //     </Layout>
+  //   ),
+  // },
   {
     path: "/login",
     element: (
       <Layout>
-        <Login />
+        <LoginTwo />
       </Layout>
     ),
     errorElement: (
