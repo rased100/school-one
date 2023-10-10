@@ -8,7 +8,7 @@ const HeadTeacherTwnd = () => {
         <img src={hTeacher} className="max-w-xs  rounded-lg shadow-2xl" />
         <div>
           <h1 className="text-5xl font-bold text-white">
-            The Principal's Message
+            Head Teacher's Message
           </h1>
           <p className="py-6 text-gray-400 md:pr-5">
             In the name of Allah, the Most Gracious, the Most Merciful, <br />{" "}

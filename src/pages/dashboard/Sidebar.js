@@ -44,10 +44,39 @@ const Sidebar = () => {
           Dashboard
         </Link>
         <Link
+          to="DbResults"
+          className={classNames(
+            {
+              "bg-gray-700 text-white": pathname === "/dashboard/DbResults",
+            },
+            linkClass
+          )}
+        >
+          <span className="text-xl">
+            <HiOutlineUsers />
+          </span>
+          Results
+        </Link>
+        <Link
+          to="DbClassRoutines"
+          className={classNames(
+            {
+              "bg-gray-700 text-white":
+                pathname === "/dashboard/DbClassRoutines",
+            },
+            linkClass
+          )}
+        >
+          <span className="text-xl">
+            <HiOutlineUsers />
+          </span>
+          Class Routines
+        </Link>
+        <Link
           to="DbNoticeBoard"
           className={classNames(
             {
-              "bg-gray-700 text-white": pathname === "/dashboard/profile",
+              "bg-gray-700 text-white": pathname === "/dashboard/DbNoticeBoard",
             },
             linkClass
           )}

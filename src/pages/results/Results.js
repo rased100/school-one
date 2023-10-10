@@ -4,7 +4,7 @@ import TabbedContent from "./TabbedContent";
 
 const Results = () => {
   return (
-    <div className="h-[50vh] flex justify-center items-center dark:bg-gray-800">
+    <div className=" flex justify-center items-center dark:bg-gray-800">
       <div className="w-full p-4 text-center bg-white    sm:p-8 dark:bg-gray-800 ">
         {/* <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
           Institute Results

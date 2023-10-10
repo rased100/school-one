@@ -17,6 +17,7 @@ import CarouselTwnd from "../carousel/CarouselTwnd";
 import NoticeBoard from "../NoticeBoard/NoticeBoard";
 import Results from "../results/Results";
 import ResultsTwo from "../results/ResultsTwo";
+import Routine from "../Routine/Routine";
 
 const Home = () => {
   useEffect(() => {
@@ -36,6 +37,7 @@ const Home = () => {
       <Results />
       {/* <Gallery /> */}
       <ImageGallery />
+      <Routine />
       <About />
       <ContactUs />
       {/* <Location /> */}
