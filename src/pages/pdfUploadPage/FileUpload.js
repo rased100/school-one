@@ -3,6 +3,8 @@ import axios from "axios";
 
 function FileUpload() {
   const [selectedFile, setSelectedFile] = useState(null);
+  const [name, setName] = useState("");
+  const [type, setType] = useState("Class Routine"); // Default to "Class Routine"
 
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
@@ -11,7 +13,8 @@ function FileUpload() {
   const handleFileUpload = async () => {
     const formData = new FormData();
     formData.append("pdfFile", selectedFile);
-    console.log(formData);
+    formData.append("name", name);
+    formData.append("type", type);
 
     try {
       const response = await axios.post(
@@ -35,6 +38,18 @@ function FileUpload() {
     <div>
       <h2>Upload PDF File</h2>
       <input type="file" accept=".pdf" onChange={handleFileChange} />
+      <input
+        type="text"
+        placeholder="Name"
+        value={name}
+        onChange={(e) => setName(e.target.value)}
+      />
+      <select value={type} onChange={(e) => setType(e.target.value)}>
+        <option value="Class Routine">Class Routine</option>
+        <option value="Results">Results</option>
+        <option value="Notice">Notice</option>
+        {/* Add more options for other types as needed */}
+      </select>
       <button onClick={handleFileUpload}>Upload</button>
     </div>
   );
