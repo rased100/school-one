@@ -1,13 +1,9 @@
 import React from "react";
 import NoticeLink from "./NoticeLink";
 
-const Notices = () => {
+const NoticesList = () => {
   return (
     <div>
-      <NoticeLink name="Examination Routine" />
-      <NoticeLink name="Class Routine" />
-      <NoticeLink name="Examination Routine" />
-      <NoticeLink name="Class Routine" />
       <NoticeLink name="Examination Routine" />
       <NoticeLink name="Class Routine" />
       <NoticeLink name="Examination Routine" />
@@ -20,4 +16,4 @@ const Notices = () => {
   );
 };
 
-export default Notices;
+export default NoticesList;

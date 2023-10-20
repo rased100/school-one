@@ -58,7 +58,7 @@ const Sidebar = () => {
           Results
         </Link>
         <Link
-          to="DbClassRoutines"
+          to="DbRoutine"
           className={classNames(
             {
               "bg-gray-700 text-white":

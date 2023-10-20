@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NoticeLink = (props) => {
   return (
     <div>
-      <a
-        href="#"
+      <Link
+        href={props.to}
         class="flex items-center justify-center p-5 my-1 text-base font-medium text-gray-300 rounded-lg hover:text-gray-900 hover:bg-gray-100 text-gray-400 bg-gray-800 hover:bg-gradient-to-br from-pink-400 via-purple-500 to-blue-200"
       >
         <svg
@@ -35,7 +36,7 @@ const NoticeLink = (props) => {
             d="M1 5h12m0 0L9 1m4 4L9 9"
           />
         </svg>
-      </a>
+      </Link>
     </div>
   );
 };

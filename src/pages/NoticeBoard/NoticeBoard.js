@@ -1,6 +1,6 @@
 import React from "react";
 import noticeLogo from "../../assets/notice3.png";
-import Notices from "../components/Notices";
+import Notices from "../components/NoticesList";
 
 const NoticeBoard = () => {
   return (

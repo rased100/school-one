@@ -18,6 +18,8 @@ import NoticeBoard from "../NoticeBoard/NoticeBoard";
 import Results from "../results/Results";
 import ResultsTwo from "../results/ResultsTwo";
 import Routine from "../Routine/Routine";
+import PdfUploadPage from "../pdfUploadPage/PdfUploadPage";
+import FileUpload from "../pdfUploadPage/FileUpload";
 
 const Home = () => {
   useEffect(() => {
@@ -26,6 +28,8 @@ const Home = () => {
   return (
     <div className="flex flex-col">
       {/* <CarouselTwnd /> */}
+      {/* <PdfUploadPage /> */}
+      <FileUpload />
       <CarouselComponent />
       {/* <Headers /> */}
       {/* <HeadTeacher /> */}
@@ -34,10 +38,10 @@ const Home = () => {
       {/* <Teachers /> */}
       {/* <TeachersTwnd /> */}
       <TeachersTailwind />
+      <Routine />
       <Results />
       {/* <Gallery /> */}
       <ImageGallery />
-      <Routine />
       <About />
       <ContactUs />
       {/* <Location /> */}

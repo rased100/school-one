@@ -10,7 +10,8 @@ const Results = () => {
           Institute Results
         </h5> */}
         <h2 className="py-10 text-4xl tracking-tight font-extrabold text-gray-900 text-white">
-          Institute Results
+          {/* Institute Results */}
+          Results
         </h2>
         <p className="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">
           Kishalaya Biddaniketan Institute Results. Download the results today.

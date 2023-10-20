@@ -11,7 +11,9 @@ import ContactUs from "../ContactUs/ContactUs";
 import LoginTwo from "../auth/Login/LoginTwo";
 import Dashboard from "../dashboard/dashboardPages/Dashboard";
 import DashboardLayout from "../dashboard/DashboardLayout";
-import DbNoticeBoard from "../dashboard/dashboardPages/DbNoticeBoard";
+import DbNoticeBoard from "../dashboard/dashboardPages/Notice/DbNoticeBoard";
+import DbResults from "../dashboard/dashboardPages/Results/DbResults";
+import DbRoutine from "../dashboard/dashboardPages/Routine/DbRoutine";
 
 const router = createBrowserRouter([
   {
@@ -117,6 +119,14 @@ const router = createBrowserRouter([
       {
         path: "DbNoticeBoard",
         element: <DbNoticeBoard />,
+      },
+      {
+        path: "DbResults",
+        element: <DbResults />,
+      },
+      {
+        path: "DbRoutine",
+        element: <DbRoutine />,
       },
     ],
   },
