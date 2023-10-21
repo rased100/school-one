@@ -1,7 +1,7 @@
 import React from "react";
 import {
   Navbar,
-  MobileNav,
+  Collapse,
   Typography,
   Button,
   IconButton,
@@ -34,8 +34,8 @@ export function NavbarDefault() {
         <Link to="/" className="flex items-center hover:text-blue-500">
           Home
         </Link>
-        {/* <a href="#" className="flex items-center hover:text-blue-500">
-        </a> */}
+        {/* <Link to="" className="flex items-center hover:text-blue-500">
+        </Link> */}
       </Typography>
       <Typography
         as="li"
@@ -92,16 +92,15 @@ export function NavbarDefault() {
             >
               Login
             </button> */}
-            {/* <a
-              href="#_"
-              class="relative px-5 py-2 font-medium text-white group"
+            {/* <Link to=""
+              className="relative px-5 py-2 font-medium text-white group"
             >
-              <span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-purple-500 group-hover:bg-gradient-to-r from-purple-600 via-purple-700 to-rose-600 group-hover:skew-x-12"></span>
-              <span class="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-gradient-to-r from-rose-600 via-purple-700 to-purple-600 group-hover:-skew-x-12"></span>
-              <span class="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
-              <span class="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
-              <span class="relative">Login</span>
-            </a> */}
+              <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-purple-500 group-hover:bg-gradient-to-r from-purple-600 via-purple-700 to-rose-600 group-hover:skew-x-12"></span>
+              <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform skew-x-12 bg-purple-700 group-hover:bg-gradient-to-r from-rose-600 via-purple-700 to-purple-600 group-hover:-skew-x-12"></span>
+              <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-purple-600 -rotate-12"></span>
+              <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-purple-400 -rotate-12"></span>
+              <span className="relative">Login</span>
+            </Link> */}
             <ButtonPrimary name="Login" />
           </Link>
         </Typography>
@@ -121,16 +120,16 @@ export function NavbarDefault() {
               className="mr-4 cursor-pointer h-[60px] rounded"
             />
           </Typography>
-          <Typography
-            as="a"
-            href="#"
-            className="mx-5 cursor-pointer py-1.5 font-bold text-2xl"
-          >
-            কিশলয় বিদ্যানিকেতন
-            <Typography className="text-sm  bg-gray-500 rounded-full mx-10 px-3 ">
-              প্লে-গ্রুপ থেকে দশম শ্রেণী
-            </Typography>
-          </Typography>
+          <span>
+            <Link to="/">
+              <Typography className="mx-5 cursor-pointer py-1.5 font-bold text-2xl">
+                কিশলয় বিদ্যানিকেতন
+              </Typography>
+              <Typography className="text-sm  bg-gray-500 rounded-full mx-10 px-3 ">
+                প্লে-গ্রুপ থেকে দশম শ্রেণী
+              </Typography>
+            </Link>
+          </span>
         </div>
 
         <div className="hidden lg:block">{navList}</div>
@@ -175,14 +174,14 @@ export function NavbarDefault() {
           )}
         </IconButton>
       </div>
-      <MobileNav open={openNav}>
+      <Collapse open={openNav}>
         <div className=" mx-auto">
           {navList}
           {/* <Button variant="gradient" size="sm" fullWidth className="mb-2">
             <span>Buy Now</span>
           </Button> */}
         </div>
-      </MobileNav>
+      </Collapse>
     </Navbar>
   );
 }

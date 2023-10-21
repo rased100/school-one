@@ -6,6 +6,7 @@ import "./Carousel.css";
 import img1 from "../../assets/kids/cc/1cc.png";
 import img2 from "../../assets/kids/cc/2cc.png";
 import img3 from "../../assets/kids/cc/3cc.png";
+import { Link } from "react-router-dom";
 
 const CarouselComponent = () => {
   return (
@@ -26,15 +27,13 @@ const CarouselComponent = () => {
           <div className="absolute flex justify-center transform -translate-y-1/2 left-[5%] right-[5%] top-[40%]">
             <div className="flex-1">
               <Typography
-                as="a"
-                href="#"
                 className="cursor-pointer font-bold text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white"
                 style={{ textShadow: "0px 0px 5px black" }}
                 //
                 data-aos="fade-down"
                 data-aos-duration="1000"
               >
-                কিশলয় বিদ্যানিকেতন
+                <Link to="/">কিশলয় বিদ্যানিকেতন</Link>
               </Typography>
               <div data-aos="fade-up" data-aos-duration="1500">
                 <Typography
@@ -57,15 +56,13 @@ const CarouselComponent = () => {
           <div className="absolute flex justify-center transform -translate-y-1/2 left-[5%] right-[5%] top-[40%]">
             <div className="flex-1">
               <Typography
-                as="a"
-                href="#"
                 className="cursor-pointer font-bold text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white"
                 style={{ textShadow: "0px 0px 5px black" }}
                 //
                 data-aos="fade-down"
                 data-aos-duration="1000"
               >
-                কিশলয় বিদ্যানিকেতন
+                <Link to="/">কিশলয় বিদ্যানিকেতন</Link>
               </Typography>
               <div data-aos="fade-up" data-aos-duration="1500">
                 <Typography
@@ -88,15 +85,13 @@ const CarouselComponent = () => {
           <div className="absolute flex justify-center transform -translate-y-1/2 left-[5%] right-[5%] top-[40%]">
             <div className="flex-1">
               <Typography
-                as="a"
-                href="#"
                 className="cursor-pointer font-bold text-3xl sm:text-5xl md:text-6xl lg:text-7xl text-white"
                 style={{ textShadow: "0px 0px 5px black" }}
                 //
                 data-aos="fade-down"
                 data-aos-duration="1000"
               >
-                কিশলয় বিদ্যানিকেতন
+                <Link to="/">কিশলয় বিদ্যানিকেতন</Link>
               </Typography>
               <div data-aos="fade-up" data-aos-duration="1500">
                 <Typography

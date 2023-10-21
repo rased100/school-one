@@ -3,6 +3,7 @@ import img1 from "../../assets/kids/1.jpg";
 import img2 from "../../assets/kids/2.jpg";
 import img3 from "../../assets/kids/3.jpg";
 import img4 from "../../assets/kids/4.jpg";
+import { Link } from "react-router-dom";
 
 const CarouselTwnd = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -54,22 +55,24 @@ const CarouselTwnd = () => {
       ))}
       {/* Navigation buttons */}
       <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-        <a
+        <Link
+          to=""
           href={`#slide${
             currentSlide === 1 ? images.length : currentSlide - 1
           }`}
           className="btn btn-circle"
         >
           ❮
-        </a>
-        <a
+        </Link>
+        <Link
+          to=""
           href={`#slide${
             currentSlide === images.length ? 1 : currentSlide + 1
           }`}
           className="btn btn-circle"
         >
           ❯
-        </a>
+        </Link>
       </div>
     </div>
   );

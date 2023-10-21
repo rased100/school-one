@@ -205,7 +205,7 @@ const NavbarTailwind = () => {
     setOpenDropdown(openDropdown === index ? null : index);
   };
 
-  const HomeIcon = () => <i class="fa-solid fa-house"></i>;
+  const HomeIcon = () => <i className="fa-solid fa-house"></i>;
 
   return (
     <div className="text-gray-900 bg-gray-300 dark-mode:text-gray-200 dark-mode:bg-gray-800 ">
@@ -257,13 +257,12 @@ const NavbarTailwind = () => {
                 >
                   <div className="px-2 py-2  rounded-md shadow dark-mode:bg-gray-800 bg-gradient-to-r from-rose-600 via-purple-700 to-purple-700">
                     {item.links.map((link, linkIndex) => (
-                      <a
+                      <div
                         key={linkIndex}
                         className="block px-4 py-2 mt-2 text-sm font-semibold  rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0  focus:text-gray-900  focus:bg-gray-200 focus:outline-none focus:shadow-outline text-white hover:text-black hover:bg-gradient-to-br from-pink-400 via-purple-500 to-blue-200"
-                        href="#"
                       >
                         {link}
-                      </a>
+                      </div>
                     ))}
                   </div>
                 </div>

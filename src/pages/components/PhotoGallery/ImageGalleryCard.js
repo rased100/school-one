@@ -18,11 +18,10 @@ const ImageGalleryCard = ({ images }) => {
     <div className="container mx-auto p-4">
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
         {images.map((image, index) => (
-          <div className=" bg-base-100 shadow-xl rounded-md">
+          <div key={index} className=" bg-base-100 shadow-xl rounded-md">
             <figure className="">
               {
                 <div
-                  key={index}
                   className="cursor-pointer "
                   onClick={() => openFullScreen(image)}
                 >

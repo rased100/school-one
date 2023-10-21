@@ -1,5 +1,6 @@
 import React from "react";
 import { MdLocationOn, MdPhoneInTalk, MdEmail } from "react-icons/md";
+import { Link } from "react-router-dom";
 const Location = () => {
   return (
     <div className="px-5" id="Contact">
@@ -11,19 +12,19 @@ const Location = () => {
           className=" flex flex-col justify-center items-center rounded-xl bg-gray-800 p-10"
         >
           {/* <h1 className="lg:text-5xl text-3xl  font-bold pb-5">Our Location</h1> */}
-          <p className="bg-gray-700 p-5 rounded-md">
+          <span className="bg-gray-700 p-5 rounded-md">
             <MdLocationOn size={30} />
-          </p>
+          </span>
           <p className="text-2xl font-bold text-white py-3">Address:</p>
           <p className="flex text-gray-400 text-lg text-left ">
             Section 13, Block B, Road 9, House 43,Mirpur, Kafrul, Dhaka, 1216
           </p>
 
           <div className="md:flex justify-center items-center mt-5">
-            <p className="text-lg flex justify-center items-center px-3">
+            <span className="text-lg flex justify-center items-center px-3">
               <MdEmail className="mr-2 text-gray-400" size={25} />{" "}
               <p className="md:hidden text-gray-400">Email:</p>
-            </p>
+            </span>
             <p className="text-lg text-gray-400">
               kishalayabiddaniketan1994@gmail.com
             </p>
@@ -31,9 +32,9 @@ const Location = () => {
 
           <div className="text-lg text-gray-400 flex mt-5">
             <MdPhoneInTalk size={30} />
-            <a href="tel:+8801972252777" className="ml-5">
+            <Link to="tel:+8801972252777" className="ml-5">
               +8801552307304
-            </a>
+            </Link>
           </div>
         </div>
         <div

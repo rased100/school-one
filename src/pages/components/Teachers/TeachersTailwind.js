@@ -13,6 +13,7 @@ import teacher10 from "../../../assets/teachers/10.png";
 import teacher11 from "../../../assets/teachers/11.png";
 import teacher12 from "../../../assets/teachers/12.png";
 import teacher13 from "../../../assets/teachers/13.png";
+import { Link } from "react-router-dom";
 
 const TeachersTailwind = () => {
   const teachersinfo = [
@@ -150,16 +151,16 @@ const TeachersTailwind = () => {
           <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
             {/*  */}
             {/* <div className="items-center bg-gray-50 rounded-lg shadow sm:flex bg-gray-800 border-gray-700">
-              <a href="#">
+              <Link to="">
                 <img
                   className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
                   src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
                   alt="Bonnie Avatar"
                 />
-              </a>
+              </Link>
               <div className="p-5">
                 <h3 className="text-xl font-bold tracking-tight text-gray-900 text-white">
-                  <a href="#">Bonnie Green</a>
+                  <Link to="">Bonnie Green</Link>
                 </h3>
                 <span className="text-gray-500 text-gray-400">
                   CEO & Web Developer
@@ -173,8 +174,11 @@ const TeachersTailwind = () => {
             </div> */}
             {/*  */}
             {teachersinfo.map((info) => (
-              <div className="items-center  rounded-lg shadow sm:flex bg-gray-800 border-gray-700">
-                <a href="#">
+              <div
+                key={info.id}
+                className="items-center  rounded-lg shadow sm:flex bg-gray-800 border-gray-700"
+              >
+                <Link to="">
                   <img
                     className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg max-w-full h-auto"
                     width={300}
@@ -182,10 +186,10 @@ const TeachersTailwind = () => {
                     src={info.img}
                     alt="Bonnie Avatar"
                   />
-                </a>
+                </Link>
                 <div className="p-5 ">
                   <h3 className="text-xl font-bold tracking-tight text-gray-900 text-white">
-                    <a href="#">{info.name}</a>
+                    <Link to="">{info.name}</Link>
                   </h3>
                   <span className="text-gray-500 text-gray-400">
                     {info.designation}

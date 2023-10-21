@@ -199,29 +199,28 @@ const Navbar = () => {
             onMouseEnter={() => toggleSubLinks(index)}
             onMouseLeave={() => toggleSubLinks(index)}
           >
-            <a
-              href="#"
+            <div
+              to=""
               className={`transition-colors ${
                 isSubLinksActive(index) ? "text-blue-500" : "text-white"
               } hover:text-yellow-500`}
             >
               {link.name}
-            </a>
+            </div>
             <div
               className={`sub-links ${isSubLinksActive(index)}`}
               style={{ backgroundColor: "#333" }}
             >
               {link.subLinks.map((subLink, subIndex) => (
-                <Link
+                <div
                   key={subIndex}
-                  to="#"
                   className="block p-2 hover:bg-gray-700 transition-colors"
                 >
                   <div className="flex flex-row items-center">
                     <FontAwesomeIcon icon={faArrowRight} className="mr-2" />
                     {subLink}
                   </div>
-                </Link>
+                </div>
               ))}
             </div>
           </li>
