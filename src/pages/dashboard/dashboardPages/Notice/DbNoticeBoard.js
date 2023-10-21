@@ -9,7 +9,7 @@ const DbNoticeBoard = () => {
         <Notices />
       </div>
       <div className="flex justify-center items-center py-10">
-        <MyButton name="Add More Notice" to="" />
+        <MyButton name="Add More Notice" to="NoticeUpload" />
       </div>
     </div>
   );

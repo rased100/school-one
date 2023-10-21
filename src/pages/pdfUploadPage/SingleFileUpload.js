@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const FileUpload = () => {
+const SingleFileUpload = (props) => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [name, setName] = useState("");
-  const [type, setType] = useState("Class Routine"); // Default to "Class Routine"
+  const [type, setType] = useState(`${props.type}`); // Default to "Class Routine"
 
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
@@ -56,10 +56,7 @@ const FileUpload = () => {
           onChange={(e) => setType(e.target.value)}
           className="w-full p-2 mb-2 rounded border"
         >
-          <option value="Class Routine">Class Routine</option>
-          <option value="Results">Results</option>
-          <option value="Notice">Notice</option>
-          {/* Add more options for other types as needed */}
+          <option value={props.type}>{props.type}</option>
         </select>
         <button
           onClick={handleFileUpload}
@@ -72,4 +69,4 @@ const FileUpload = () => {
   );
 };
 
-export default FileUpload;
+export default SingleFileUpload;
