@@ -4,7 +4,9 @@ import axios from "axios";
 const FileUpload = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [name, setName] = useState("");
-  const [type, setType] = useState("Class Routine"); // Default to "Class Routine"
+  const [type, setType] = useState("Class Routine");
+  const [suc_Message, setSuc_Message] = useState("");
+  const [err_Message, setErr_Message] = useState("");
 
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
@@ -26,11 +28,21 @@ const FileUpload = () => {
           },
         }
       );
-      console.log("File uploaded successfully");
-      // Handle success, e.g., show a success message to the user
+
+      // Check the response status and display the message accordingly
+      if (response.status === 200) {
+        console.log("File uploaded successfully");
+        setErr_Message("");
+        setSuc_Message("File uploaded successfully");
+      } else if (response.status === 409) {
+        console.log("File with the same originalname already exists");
+      }
     } catch (error) {
       console.error("Error uploading file:", error);
-      // Handle error, e.g., show an error message to the user
+      console.error("Error message", error.response.data);
+
+      setSuc_Message("");
+      setErr_Message(`Error: ${error.response.data}`);
     }
   };
 
@@ -67,6 +79,10 @@ const FileUpload = () => {
         >
           Upload
         </button>
+        <div>
+          <p className="text-green-500">{suc_Message}</p>
+          <p className="text-red-500">{err_Message}</p>
+        </div>
       </div>
     </div>
   );
