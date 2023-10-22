@@ -20,6 +20,7 @@ import ResultsTwo from "../results/ResultsTwo";
 import Routine from "../Routine/Routine";
 import FileUpload from "../pdfUploadPage/FileUpload";
 import ResultUpload from "../pdfUploadPage/ResultUpload";
+import PdfList from "../pdfList/PdfList";
 
 const Home = () => {
   useEffect(() => {
@@ -28,6 +29,7 @@ const Home = () => {
   return (
     <div className="flex flex-col">
       {/* <CarouselTwnd /> */}
+      <PdfList />
       <FileUpload />
       <CarouselComponent />
       {/* <Headers /> */}
