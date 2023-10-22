@@ -20,6 +20,18 @@ function PdfList() {
       });
   }, []);
 
+  const handleDelete = (id) => {
+    axios
+      .delete(`http://localhost:4000/pdf/delete/${id}`)
+      .then(() => {
+        // Remove the deleted PDF from the state
+        setPdfFiles(pdfFiles.filter((file) => file.id !== id));
+      })
+      .catch((error) => {
+        console.error("Error deleting PDF file:", error);
+      });
+  };
+
   return (
     <div>
       <h1>List of PDF Files</h1>
@@ -33,6 +45,7 @@ function PdfList() {
             >
               {file.name}
             </Link>
+            <button onClick={() => handleDelete(file.id)}>Delete</button>
           </li>
         ))}
       </ul>
