@@ -9,7 +9,7 @@ const LoginTwo = () => {
   const [password, setPassword] = useState("");
 
   const { user, loginUser, isLoading, authError } = useAuth();
-  console.log("user", user);
+  // console.log("user", user);
 
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
@@ -59,7 +59,7 @@ const LoginTwo = () => {
             >
               <div>
                 <label
-                  for="email"
+                  htmlFor="email"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
                   Your email
@@ -77,7 +77,7 @@ const LoginTwo = () => {
               </div>
               <div>
                 <label
-                  for="password"
+                  htmlFor="password"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
                   Password
@@ -106,7 +106,7 @@ const LoginTwo = () => {
                   </div>
                   <div className="ml-3 text-sm">
                     <label
-                      for="remember"
+                      htmlFor="remember"
                       className="text-gray-500 dark:text-gray-300"
                     >
                       Remember me
