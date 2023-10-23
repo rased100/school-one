@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <div className="flex flex-col">
       {/* <CarouselTwnd /> */}
-      <PdfList />
+      {/* <PdfList /> */}
       <FileUpload />
       <CarouselComponent />
       {/* <Headers /> */}
