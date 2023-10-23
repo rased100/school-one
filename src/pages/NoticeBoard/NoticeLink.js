@@ -5,7 +5,7 @@ const NoticeLink = (props) => {
   return (
     <div>
       <Link
-        href={props.to}
+        to={props.to}
         className="flex items-center justify-center p-5 my-1 text-base font-medium text-gray-300 rounded-lg hover:text-gray-900 hover:bg-gray-100 text-gray-400 bg-gray-800 hover:bg-gradient-to-br from-pink-400 via-purple-500 to-blue-200"
       >
         <svg

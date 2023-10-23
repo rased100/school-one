@@ -1,6 +1,6 @@
 import React from "react";
 import noticeLogo from "../../assets/notice3.png";
-import Notices from "../components/NoticesList";
+import NoticesList from "./NoticesList";
 
 const NoticeBoard = () => {
   return (
@@ -12,7 +12,7 @@ const NoticeBoard = () => {
         </div>
         <div className="flex-1 justify-center items-center rounded-lg lg:pl-10  py-10 lg:py-0">
           <div className="h-[50vh] flex-1 overflow-y-auto overflow-hidden">
-            <Notices />
+            <NoticesList />
           </div>
         </div>
       </div>

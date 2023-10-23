@@ -1,5 +1,5 @@
 import React from "react";
-import NoticeLink from "./NoticeLink";
+import NoticeLink from "../NoticeBoard/NoticeLink";
 
 const ResultsList = () => {
   return (

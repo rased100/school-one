@@ -1,12 +1,12 @@
 import React from "react";
-import Notices from "../../../components/NoticesList";
 import MyButton from "../../../components/MyButton";
+import NoticesList from "../../../NoticeBoard/NoticesList";
 
 const DbNoticeBoard = () => {
   return (
     <div className="bg-gray-700 px-10 py-10 scroll-auto">
       <div className="flex-1 justify-center items-center rounded-lg lg:pl-10  py-10 lg:py-0">
-        <Notices />
+        <NoticesList />
       </div>
       <div className="flex justify-center items-center py-10">
         <MyButton name="Add More Notice" to="NoticeUpload" />
