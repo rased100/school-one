@@ -31,9 +31,11 @@ const FileUpload = () => {
 
       // Check the response status and display the message accordingly
       if (response.status === 200) {
+        console.log("res-rsd", response.data);
         console.log("File uploaded successfully");
         setErr_Message("");
-        setSuc_Message("File uploaded successfully");
+        setSuc_Message(response.data || "File uploaded successfully");
+        // setSuc_Message("File uploaded successfully");
       } else if (response.status === 409) {
         console.log("File with the same originalname already exists");
       }
