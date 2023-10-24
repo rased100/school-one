@@ -19,7 +19,6 @@ import Results from "../results/Results";
 import ResultsTwo from "../results/ResultsTwo";
 import Routine from "../Routine/Routine";
 import FileUpload from "../pdfUploadPage/FileUpload";
-import ResultUpload from "../pdfUploadPage/ResultUpload";
 import PdfList from "../pdfList/PdfList";
 import RoutineAndResults from "../Routine/RoutineAndResults";
 

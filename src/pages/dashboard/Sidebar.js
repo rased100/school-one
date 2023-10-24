@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FcBullish } from "react-icons/fc";
 import logo from "../../assets/logo-2.png";
 import {
@@ -10,6 +10,7 @@ import {
   HiOutlineUsers,
   HiOutlineViewGrid,
 } from "react-icons/hi";
+import useAuth from "../../hooks/useAuth";
 
 const linkClass =
   "text-white flex items-center gap-2 font-light px-3 py-2 hover:bg-gray-800 hover:no-underline active:bg-neutral-600 rounded-sm text-base";
@@ -17,6 +18,9 @@ const linkClass =
 const Sidebar = () => {
   const { pathname } = useLocation();
   console.log("pathname: ", pathname);
+
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
 
   return (
     <div className="bg-gray-900 w-60 p-3 flex flex-col">
@@ -118,12 +122,18 @@ const Sidebar = () => {
           Help & Support
         </Link>
 
-        <div className={classNames(linkClass, "cursor-pointer text-red-500")}>
+        <Link
+          className={classNames(linkClass, "cursor-pointer text-red-500")}
+          onClick={() => {
+            logout();
+            navigate("/"); // Navigate to the home page after logging out
+          }}
+        >
           <span className="text-xl">
             <HiOutlineLogout />
           </span>
           Logout
-        </div>
+        </Link>
       </div>
     </div>
   );

@@ -1,14 +1,14 @@
 import React from "react";
 import MyButton from "../../../components/MyButton";
-import RoutineList from "../../../components/RoutineList";
+import NoticeLink from "../../../NoticeBoard/NoticeLink";
 
 const DbRoutine = () => {
+  const type = "Class Routine";
+  const url = `http://localhost:4000/pdf/pdf_files?type=${type}`;
   return (
     <div className="bg-gray-700 px-10 py-10 scroll-auto">
       <div className="flex-1 justify-center items-center rounded-lg lg:pl-10  py-10 lg:py-0">
-        <RoutineList />
-        <RoutineList />
-        <RoutineList />
+        <NoticeLink url={url} showDelete />
       </div>
       <div className="flex justify-center items-center py-10">
         <MyButton name="Add More Routine" to="ClassRoutineUpload" />

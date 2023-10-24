@@ -7,21 +7,25 @@ import {
 } from "react-icons/hi";
 import { Link, useNavigate } from "react-router-dom";
 import classNames from "classnames";
+import logo from "../../assets/logo-2.png";
+import useAuth from "../../hooks/useAuth";
 
 const Header = () => {
+  const { user, logout } = useAuth();
   const navigate = useNavigate();
   return (
     <div className="bg-white h-16 px-4 flex items-center border-b border-gray-200 justify-between">
-      <div className="relative">
-        <HiOutlineSearch
+      <div className="">
+        <h1 className="text-2xl font-bold text-blue-800">Dashboard</h1>
+        {/* <HiOutlineSearch
           fontSize={20}
           className="text-gray-400 absolute top-1/2 left-3 -translate-y-1/2"
-        />
-        <input
+        /> */}
+        {/* <input
           type="text"
           placeholder="Search..."
           className="text-sm text-gray-600 focus:outline-none active:outline-none border border-gray-400 w-[24rem] h-10 pl-11 pr-4 rounded-sm"
-        />
+        /> */}
       </div>
       <div className="flex items-center gap-2 mr-2">
         <Popover className="relative">
@@ -99,11 +103,10 @@ const Header = () => {
               <div
                 className="h-10 w-10 rounded-full bg-sky-500 bg-cover bg-no-repeat bg-center"
                 style={{
-                  backgroundImage:
-                    'url("https://source.unsplash.com/80x80?face")',
+                  backgroundImage: `url(${logo})`,
                 }}
               >
-                <span className="sr-only">Marc Backes</span>
+                <span className="sr-only">Kishalaya</span>
               </div>
             </Menu.Button>
           </div>
@@ -126,7 +129,7 @@ const Header = () => {
                       "active:bg-gray-200 rounded-sm px-4 py-2 text-gray-700 cursor-pointer focus:bg-gray-200"
                     )}
                   >
-                    <Link to="profile">Your Profile</Link>
+                    <Link to="">Profile</Link>
                   </div>
                 )}
               </Menu.Item>
@@ -145,14 +148,18 @@ const Header = () => {
               </Menu.Item>
               <Menu.Item>
                 {({ active }) => (
-                  <div
+                  <Link
+                    onClick={() => {
+                      logout();
+                      navigate("/"); // Navigate to the home page after logging out
+                    }}
                     className={classNames(
                       active && "bg-gray-100",
                       "active:bg-gray-200 rounded-sm px-4 py-2 text-gray-700 cursor-pointer focus:bg-gray-200"
                     )}
                   >
                     Sign out
-                  </div>
+                  </Link>
                 )}
               </Menu.Item>
             </Menu.Items>

@@ -17,6 +17,8 @@ import DbRoutine from "../dashboard/dashboardPages/Routine/DbRoutine";
 import ResultUpload from "../pdfUploadPage/ResultUpload";
 import ClassRoutineUpload from "../pdfUploadPage/ClassRoutineUpload";
 import NoticeUpload from "../pdfUploadPage/NoticeUpload";
+import Settings from "../dashboard/dashboardPages/Settings";
+import HelpAndSupport from "../dashboard/dashboardPages/HelpAndSupport";
 
 const router = createBrowserRouter([
   {
@@ -118,6 +120,14 @@ const router = createBrowserRouter([
       {
         path: "",
         element: <Dashboard />,
+      },
+      {
+        path: "settings",
+        element: <Settings />,
+      },
+      {
+        path: "helpandsupport",
+        element: <HelpAndSupport />,
       },
       {
         path: "DbNoticeBoard",
