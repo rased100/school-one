@@ -44,7 +44,7 @@ const NoticeLink = (props) => {
               className="flex items-center justify-between  my-1 text-base font-medium text-gray-300 rounded-lg hover:text-gray-900 hover:bg-gray-100 text-gray-400 bg-gray-800 hover:bg-gradient-to-br from-pink-400 via-purple-500 to-blue-200 "
             >
               <Link
-                to={`${url}/${file.id}`}
+                to={`http://localhost:4000/pdf/pdf_files/${file.id}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 items-center pl-5 py-5 truncate"

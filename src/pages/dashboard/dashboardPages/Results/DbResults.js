@@ -9,7 +9,7 @@ const DbResults = () => {
         <ResultsList />
       </div>
       <div className="flex justify-center items-center py-10">
-        <MyButton name="Add More Result" to="ResultUpload" />
+        <MyButton to="ResultUpload" name="Add More Result" />
       </div>
     </div>
   );

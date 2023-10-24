@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import NoticeLink from "../NoticeBoard/NoticeLink";
-import NoticesList from "../NoticeBoard/NoticesList";
 
 const Routine = (props) => {
   const { type } = props;
@@ -21,7 +19,7 @@ const Routine = (props) => {
           Kishalaya Biddaniketan {props.name}. Download The {props.name} Today.
         </p>
         <div className="h-[70vh] md:h-[50vh] flex-1 overflow-y-auto overflow-hidden">
-          <NoticesList url={url} />
+          <NoticeLink url={url} />
         </div>
       </div>
     </div>

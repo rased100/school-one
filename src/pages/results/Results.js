@@ -1,7 +1,7 @@
 import React from "react";
+import NoticeLink from "../NoticeBoard/NoticeLink";
 // import { Link } from "react-router-dom";
 // import TabbedContent from "./TabbedContent";
-import NoticesList from "../NoticeBoard/NoticesList";
 
 const Results = () => {
   return (
@@ -18,7 +18,7 @@ const Results = () => {
           Kishalaya Biddaniketan Institute Results. Download the results today.
         </p>
         <div className="h-[35vh]  md:h-[50vh] flex-1 overflow-y-auto overflow-hidden">
-          <NoticesList />
+          <NoticeLink />
         </div>
         {/* <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
           <Link
