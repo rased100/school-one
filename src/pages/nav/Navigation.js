@@ -122,10 +122,10 @@ export function NavbarDefault() {
           </Typography>
           <span>
             <Link to="/">
-              <Typography className="mx-5 cursor-pointer py-1.5 font-bold text-2xl">
+              <Typography className="mx-5 cursor-pointer py-1.5 font-bold text-2xl text-center ">
                 কিশলয় বিদ্যানিকেতন
               </Typography>
-              <Typography className="text-sm  bg-gray-500 rounded-full mx-10 px-3 ">
+              <Typography className="text-sm font-bold text-center   rounded-full mx-10 px-3 ">
                 প্লে-গ্রুপ থেকে দশম শ্রেণী
               </Typography>
             </Link>
@@ -138,7 +138,7 @@ export function NavbarDefault() {
         </Button> */}
         <IconButton
           variant="text"
-          className="ml-auto h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
+          className="mr-3 h-6 w-6 text-inherit hover:bg-transparent focus:bg-transparent active:bg-transparent lg:hidden"
           ripple={false}
           onClick={() => setOpenNav(!openNav)}
         >
