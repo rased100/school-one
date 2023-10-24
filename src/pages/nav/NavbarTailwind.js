@@ -34,37 +34,37 @@ const NavbarTailwind = () => {
         <Link to="" key="SubLink2.1">
           Governing Body
         </Link>,
-        <Link to="" key="SubLink2.2">
+        <Link to="/HeadTeacherPage" key="SubLink2.2">
           Chief Person's Message
         </Link>,
-        <Link to="" key="SubLink2.3">
-          Principal's Message
+        <Link to="/HeadTeacherPage" key="SubLink2.3">
+          Head Teacher's Message
         </Link>,
-        <Link to="" key="SubLink2.4">
-          Teacher
+        <Link to="/TeachersTailwind" key="SubLink2.4">
+          Teachers
         </Link>,
         <Link to="" key="SubLink2.5">
-          Staff
+          School Committee
         </Link>,
       ],
     },
     {
       label: "Academic",
       links: [
-        <Link to="" key="SubLink3.1">
+        <Link to="/RoutineAndResults" key="SubLink3.1">
           Class Routine
         </Link>,
-        <Link to="" key="SubLink3.2">
-          Exam Routine
+        <Link to="/RoutineAndResults" key="SubLink3.2">
+          Exam Results
         </Link>,
-        <Link to="" key="SubLink3.3">
-          Notice
+        <Link to="/NoticeBoard" key="SubLink3.3">
+          Notice Board
         </Link>,
         <Link to="" key="SubLink3.4">
           Syllabus
         </Link>,
         <Link to="" key="SubLink3.5">
-          Calendar & Year Planner
+          Students
         </Link>,
       ],
     },
@@ -179,7 +179,7 @@ const NavbarTailwind = () => {
     {
       label: "Gallery",
       links: [
-        <Link to="" key="Photos">
+        <Link to="/ImageGallery" key="Photos">
           Photos
         </Link>,
         <Link to="" key="Vodeos">

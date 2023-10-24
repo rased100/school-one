@@ -1,7 +1,7 @@
 import React from "react";
 import hTeacher from "../../assets/headTeacher.jpg";
 
-const HeadTeacherTwnd = () => {
+const HeadTeacherPage = () => {
   return (
     <div className="hero min-h-screen bg-gray-900">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -43,4 +43,4 @@ const HeadTeacherTwnd = () => {
   );
 };
 
-export default HeadTeacherTwnd;
+export default HeadTeacherPage;

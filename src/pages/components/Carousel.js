@@ -3,9 +3,12 @@ import { Carousel } from "react-responsive-carousel";
 import { Typography } from "@material-tailwind/react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./Carousel.css";
-import img1 from "../../assets/kids/cc/1cc.png";
-import img2 from "../../assets/kids/cc/2cc.png";
-import img3 from "../../assets/kids/cc/3cc.png";
+import img1 from "../../assets/kids/cc/1c.png";
+import img2 from "../../assets/kids/cc/2c.png";
+import img3 from "../../assets/kids/cc/3c.png";
+// import img1 from "../../assets/kids/cc/1cc.png";
+// import img2 from "../../assets/kids/cc/2cc.png";
+// import img3 from "../../assets/kids/cc/3cc.png";
 import { Link } from "react-router-dom";
 
 const CarouselComponent = () => {

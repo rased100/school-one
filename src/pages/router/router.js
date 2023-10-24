@@ -19,6 +19,10 @@ import ClassRoutineUpload from "../pdfUploadPage/ClassRoutineUpload";
 import NoticeUpload from "../pdfUploadPage/NoticeUpload";
 import Settings from "../dashboard/dashboardPages/Settings";
 import HelpAndSupport from "../dashboard/dashboardPages/HelpAndSupport";
+import HeadTeacherPage from "../HeadTeacher/HeadTeacherPage";
+import TeachersTailwind from "../components/Teachers/TeachersTailwind";
+import RoutineAndResults from "../Routine/RoutineAndResults";
+import NoticeBoard from "../NoticeBoard/NoticeBoard";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +30,32 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Home />
+      </Layout>
+    ),
+    errorElement: (
+      <Layout>
+        <ErrorPage />
+      </Layout>
+    ),
+  },
+  // {
+  //   path: "ImageGallery",
+  //   element: (
+  //     <Layout>
+  //       <ImageGallery />
+  //     </Layout>
+  //   ),
+  //   errorElement: (
+  //     <Layout>
+  //       <ErrorPage />
+  //     </Layout>
+  //   ),
+  // },
+  {
+    path: "NoticeBoard",
+    element: (
+      <Layout>
+        <NoticeBoard />
       </Layout>
     ),
     errorElement: (
@@ -47,19 +77,45 @@ const router = createBrowserRouter([
       </Layout>
     ),
   },
-  // {
-  //   path: "/login",
-  //   element: (
-  //     <Layout>
-  //       <Login />
-  //     </Layout>
-  //   ),
-  //   errorElement: (
-  //     <Layout>
-  //       <ErrorPage />
-  //     </Layout>
-  //   ),
-  // },
+  {
+    path: "/HeadTeacherPage",
+    element: (
+      <Layout>
+        <HeadTeacherPage />
+      </Layout>
+    ),
+    errorElement: (
+      <Layout>
+        <ErrorPage />
+      </Layout>
+    ),
+  },
+  {
+    path: "/TeachersTailwind",
+    element: (
+      <Layout>
+        <TeachersTailwind />
+      </Layout>
+    ),
+    errorElement: (
+      <Layout>
+        <ErrorPage />
+      </Layout>
+    ),
+  },
+  {
+    path: "/RoutineAndResults",
+    element: (
+      <Layout>
+        <RoutineAndResults />
+      </Layout>
+    ),
+    errorElement: (
+      <Layout>
+        <ErrorPage />
+      </Layout>
+    ),
+  },
   {
     path: "/login",
     element: (
@@ -87,7 +143,7 @@ const router = createBrowserRouter([
   //   ),
   // },
   {
-    path: "/imagegallery",
+    path: "/ImageGallery",
     element: (
       <Layout>
         <ImageGallery />
