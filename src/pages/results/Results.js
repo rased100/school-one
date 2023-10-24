@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import TabbedContent from "./TabbedContent";
+// import { Link } from "react-router-dom";
+// import TabbedContent from "./TabbedContent";
+import NoticesList from "../NoticeBoard/NoticesList";
 
 const Results = () => {
   return (
@@ -16,7 +17,10 @@ const Results = () => {
         <p className="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">
           Kishalaya Biddaniketan Institute Results. Download the results today.
         </p>
-        <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+        <div className="h-[35vh]  md:h-[50vh] flex-1 overflow-y-auto overflow-hidden">
+          <NoticesList />
+        </div>
+        {/* <div className="items-center justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
           <Link
             to=""
             className="w-full sm:w-auto bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:outline-none focus:ring-gray-300 text-white rounded-lg inline-flex items-center justify-center px-4 py-2.5 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700"
@@ -108,8 +112,8 @@ const Results = () => {
             </div>
           </Link>
 
-          {/* <TabbedContent /> */}
-        </div>
+          <TabbedContent />
+        </div> */}
       </div>
     </div>
   );

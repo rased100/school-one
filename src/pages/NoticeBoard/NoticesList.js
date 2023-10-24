@@ -1,17 +1,14 @@
 import React from "react";
 import NoticeLink from "./NoticeLink";
 
-const NoticesList = () => {
+const NoticesList = (props) => {
+  const { url, type } = props;
+  // const url = type
+  //   ? `http://localhost:4000/pdf/pdf_files?type=${type}`
+  //   : `http://localhost:4000/pdf/pdf_files`;
   return (
     <div>
-      <NoticeLink name="Examination Routine" />
-      <NoticeLink name="Class Routine" />
-      <NoticeLink name="Examination Routine" />
-      <NoticeLink name="Class Routine" />
-      <NoticeLink name="Examination Routine" />
-      <NoticeLink name="Class Routine" />
-      <NoticeLink name="Examination Routine" />
-      <NoticeLink name="Class Routine" />
+      <NoticeLink url={url} />
     </div>
   );
 };

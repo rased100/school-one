@@ -3,6 +3,7 @@ import noticeLogo from "../../assets/notice3.png";
 import NoticesList from "./NoticesList";
 
 const NoticeBoard = () => {
+  const url = `http://localhost:4000/pdf/pdf_files`;
   return (
     <>
       <div class="lg:flex bg-gray-700 px-10 py-10">
@@ -10,13 +11,14 @@ const NoticeBoard = () => {
           <div className=" flex justify-center items-center">
             <img
               src={noticeLogo}
+              alt="noticeboard"
               className="lg:h-[50vh]  rounded-lg shadow-2xl"
             />
           </div>
         </div>
         <div class="lg:w-[70%] overflow-hidden rounded-lg lg:pl-10  py-10 lg:py-0">
           <div className="h-[35vh]  md:h-[50vh] flex-1 overflow-y-auto overflow-hidden">
-            <NoticesList />
+            <NoticesList url={url} />
           </div>
         </div>
       </div>

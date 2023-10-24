@@ -45,6 +45,7 @@ function PdfList() {
             >
               {file.name}
             </Link>
+
             <button onClick={() => handleDelete(file.id)}>Delete</button>
           </li>
         ))}

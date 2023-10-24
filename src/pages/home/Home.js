@@ -21,6 +21,7 @@ import Routine from "../Routine/Routine";
 import FileUpload from "../pdfUploadPage/FileUpload";
 import ResultUpload from "../pdfUploadPage/ResultUpload";
 import PdfList from "../pdfList/PdfList";
+import RoutineAndResults from "../Routine/RoutineAndResults";
 
 const Home = () => {
   useEffect(() => {
@@ -30,7 +31,7 @@ const Home = () => {
     <div className="flex flex-col">
       {/* <CarouselTwnd /> */}
       {/* <PdfList /> */}
-      <FileUpload />
+      {/* <FileUpload /> */}
       <CarouselComponent />
       {/* <Headers /> */}
       {/* <HeadTeacher /> */}
@@ -39,8 +40,10 @@ const Home = () => {
       {/* <Teachers /> */}
       {/* <TeachersTwnd /> */}
       <TeachersTailwind />
-      <Routine />
-      <Results />
+      {/* <Routine /> */}
+      {/* <Results /> */}
+      <RoutineAndResults />
+      {/* <ResultsTwo /> */}
       {/* <Gallery /> */}
       <ImageGallery />
       <About />
