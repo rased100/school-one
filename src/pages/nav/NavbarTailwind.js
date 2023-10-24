@@ -7,18 +7,6 @@ import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 const NavbarTailwind = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
 
-  //   const dropdownItems = [
-  //     {
-  //       label: "Dropdown 1",
-  //       links: ["Link 1", "Link 2", "Link 3", "Link 4", "Link 5"],
-  //     },
-  //     {
-  //       label: "Dropdown 2",
-  //       links: ["Link 6", "Link 7", "Link 8", "Link 9", "Link 10"],
-  //     },
-  //     // Add more dropdown items here...
-  //   ];
-
   const dropdownItems = [
     {
       label: "About",
@@ -47,7 +35,7 @@ const NavbarTailwind = () => {
           Governing Body
         </Link>,
         <Link to="" key="SubLink2.2">
-          Chief Patron's Message
+          Chief Person's Message
         </Link>,
         <Link to="" key="SubLink2.3">
           Principal's Message
