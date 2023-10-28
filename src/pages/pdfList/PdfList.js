@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function PdfList() {
   const [pdfFiles, setPdfFiles] = useState([]);
 
-  const url = `http://localhost:4000/pdf/pdf_files`;
+  const url = `http://mynodejs.kishalayabiddaniketan.edu.bd/pdf_files`;
 
   useEffect(() => {
     // Make an HTTP GET request to your Node.js server
@@ -22,7 +22,7 @@ function PdfList() {
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:4000/pdf/delete/${id}`)
+      .delete(`http://mynodejs.kishalayabiddaniketan.edu.bd/delete/${id}`)
       .then(() => {
         // Remove the deleted PDF from the state
         setPdfFiles(pdfFiles.filter((file) => file.id !== id));

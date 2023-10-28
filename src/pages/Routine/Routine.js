@@ -4,7 +4,7 @@ import NoticeLink from "../NoticeBoard/NoticeLink";
 const Routine = (props) => {
   const { type } = props;
   console.log("type in routine", type);
-  const url = `http://localhost:4000/pdf/pdf_files?type=${type}`;
+  const url = `http://mynodejs.kishalayabiddaniketan.edu.bd/pdf_files?type=${type}`;
   console.log("routine-url", url);
   return (
     <div className=" flex justify-center items-center bg-gray-700">

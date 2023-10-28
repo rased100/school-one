@@ -3,7 +3,7 @@ import noticeLogo from "../../assets/notice3.png";
 import NoticeLink from "./NoticeLink";
 
 const NoticeBoard = () => {
-  const url = `http://localhost:4000/pdf/pdf_files`;
+  const url = `http://mynodejs.kishalayabiddaniketan.edu.bd/pdf_files`;
   return (
     <>
       <div class="lg:flex bg-gray-700 px-10 py-10">

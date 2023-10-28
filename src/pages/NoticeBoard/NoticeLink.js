@@ -6,7 +6,7 @@ const NoticeLink = (props) => {
   const { url } = props;
   const [pdfFiles, setPdfFiles] = useState([]);
 
-  // const url = `http://localhost:4000/pdf/pdf_files`;
+  // const url = `http://mynodejs.kishalayabiddaniketan.edu.bd/pdf_files`;
 
   useEffect(() => {
     // Make an HTTP GET request to your Node.js server
@@ -23,7 +23,7 @@ const NoticeLink = (props) => {
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://localhost:4000/pdf/delete/${id}`)
+      .delete(`http://mynodejs.kishalayabiddaniketan.edu.bd/delete/${id}`)
       .then(() => {
         // Remove the deleted PDF from the state
         setPdfFiles(pdfFiles.filter((file) => file.id !== id));
@@ -44,7 +44,7 @@ const NoticeLink = (props) => {
               className="flex items-center justify-between  my-1 text-base font-medium text-gray-300 rounded-lg hover:text-gray-900 hover:bg-gray-100 text-gray-400 bg-gray-800 hover:bg-gradient-to-br from-pink-400 via-purple-500 to-blue-200 "
             >
               <Link
-                to={`http://localhost:4000/pdf/pdf_files/${file.id}`}
+                to={`http://mynodejs.kishalayabiddaniketan.edu.bd/pdf_files/${file.id}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 items-center pl-5 py-5 truncate"

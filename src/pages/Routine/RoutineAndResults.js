@@ -8,7 +8,7 @@ const RoutineAndResults = () => {
   return (
     <div className="lg:flex lg:justify-around bg-gray-700">
       <Routine name="Class Routine" type="Class Routine" />
-      <Routine name="Exam Results" type="Results" />
+      <Routine name="Exam Results" type="Result" />
     </div>
   );
 };
