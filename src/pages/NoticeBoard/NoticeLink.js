@@ -1,20 +1,25 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { formatDistanceToNow } from "date-fns";
+import MyButton from "../components/MyButton";
+
+const formatTimeAgo = (timestamp) => {
+  return formatDistanceToNow(new Date(timestamp), { addSuffix: true });
+};
 
 const NoticeLink = (props) => {
   const { url } = props;
   const [pdfFiles, setPdfFiles] = useState([]);
 
-  // const url = `http://mynodejs.kishalayabiddaniketan.edu.bd/pdf_files`;
-
   useEffect(() => {
-    // Make an HTTP GET request to your Node.js server
     axios
       .get(url)
       .then((response) => {
-        setPdfFiles(response.data);
-        console.log(response.data);
+        // Sort the notices by ID in descending order (highest ID first)
+        const sortedNotices = response.data.sort((a, b) => b.id - a.id);
+        setPdfFiles(sortedNotices);
+        console.log("sortedNotices", sortedNotices);
       })
       .catch((error) => {
         console.error("Error fetching PDF files:", error);
@@ -23,7 +28,7 @@ const NoticeLink = (props) => {
 
   const handleDelete = (id) => {
     axios
-      .delete(`http://mynodejs.kishalayabiddaniketan.edu.bd/delete/${id}`)
+      .delete(`https://mynodejs.kishalayabiddaniketan.edu.bd/delete/${id}`)
       .then(() => {
         // Remove the deleted PDF from the state
         setPdfFiles(pdfFiles.filter((file) => file.id !== id));
@@ -32,6 +37,7 @@ const NoticeLink = (props) => {
         console.error("Error deleting PDF file:", error);
       });
   };
+
   return (
     <div>
       <ul>
@@ -44,12 +50,12 @@ const NoticeLink = (props) => {
               className="flex items-center justify-between  my-1 text-base font-medium text-gray-300 rounded-lg hover:text-gray-900 hover:bg-gray-100 text-gray-400 bg-gray-800 hover:bg-gradient-to-br from-pink-400 via-purple-500 to-blue-200 "
             >
               <Link
-                to={`http://mynodejs.kishalayabiddaniketan.edu.bd/pdf_files/${file.id}`}
+                to={`https://mynodejs.kishalayabiddaniketan.edu.bd/pdf_files/${file.id}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 items-center pl-5 py-5 truncate"
               >
-                <div className="flex">
+                <div className="flex items-center">
                   <span>
                     <svg
                       className="w-6  h-6 mr-2"
@@ -64,22 +70,39 @@ const NoticeLink = (props) => {
                   </span>
                   <span className="truncate">
                     <p className="px-3">{file.name}</p>
-                    {/* <p>p2_text_kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk</p> */}
+                    <p className="px-3 text-xs text-left">
+                      {formatTimeAgo(file.date)}
+                    </p>
                   </span>
                 </div>
               </Link>
               {props.showDelete ? (
-                <Link className="" onClick={() => handleDelete(file.id)}>
-                  <svg
-                    className="w-6 h-6 m-5 hover:text-red-500"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    height="1em"
-                    width="1em"
-                  >
-                    <path d="M6 19a2 2 0 002 2h8a2 2 0 002-2V7H6v12m2.46-7.12l1.41-1.41L12 12.59l2.12-2.12 1.41 1.41L13.41 14l2.12 2.12-1.41 1.41L12 15.41l-2.12 2.12-1.41-1.41L10.59 14l-2.13-2.12M15.5 4l-1-1h-5l-1 1H5v2h14V4h-3.5z" />
-                  </svg>
-                </Link>
+                // <Link
+                //   className="flex items-center mr-2 px-2 py-2 hover:text-red-500 bg-gray-500 rounded-md"
+                //   onClick={() => handleDelete(file.id)}
+                // >
+                //   <span>
+                // <svg
+                //   className="w-6 h-6 "
+                //   viewBox="0 0 24 24"
+                //   fill="currentColor"
+                //   height="1em"
+                //   width="1em"
+                // >
+                //   <path d="M6 19a2 2 0 002 2h8a2 2 0 002-2V7H6v12m2.46-7.12l1.41-1.41L12 12.59l2.12-2.12 1.41 1.41L13.41 14l2.12 2.12-1.41 1.41L12 15.41l-2.12 2.12-1.41-1.41L10.59 14l-2.13-2.12M15.5 4l-1-1h-5l-1 1H5v2h14V4h-3.5z" />
+                // </svg>
+                //   </span>
+                //   <span>
+                //     <p>delete</p>
+                //   </span>
+                // </Link>
+
+                <div className="mr-2">
+                  <MyButton
+                    name="delete"
+                    onClick={() => handleDelete(file.id)}
+                  />
+                </div>
               ) : (
                 <span className="m-5">
                   <svg
@@ -100,7 +123,6 @@ const NoticeLink = (props) => {
                 </span>
               )}
             </div>
-            {/* <button onClick={() => handleDelete(file.id)}>Delete</button> */}
           </li>
         ))}
       </ul>

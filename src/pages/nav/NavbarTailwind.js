@@ -172,7 +172,7 @@ const NavbarTailwind = () => {
           বাংলাদেশ কারিগরি শিক্ষা বোর্ড
         </Link>,
         <Link to="https://www.dhakaeducationboard.gov.bd/" key="SubLink8.4">
-          মাধ্যমিক ও উচ্চমাধ্যমিক শিক্ষা বোর্ড, ঢাকা
+          মাধ্যমিক ও উচ্চমাধ্যমিক শিক্ষা বোর্ড
         </Link>,
       ],
     },

@@ -5,6 +5,7 @@ const MyButton = (props) => {
   return (
     <Link
       to={props.to}
+      onClick={props.onClick}
       className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-md shadow-2xl group"
     >
       <span className="absolute inset-0 w-full h-full transition duration-300 ease-out opacity-0 bg-gradient-to-br from-pink-600 via-purple-700 to-blue-400 group-hover:opacity-100"></span>

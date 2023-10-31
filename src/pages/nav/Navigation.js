@@ -122,10 +122,10 @@ export function NavbarDefault() {
           </Typography>
           <span>
             <Link to="/">
-              <Typography className="mx-5 cursor-pointer py-1.5 font-bold text-2xl text-center ">
+              <Typography className="cursor-pointer py-1.5 font-bold text-lg sm:text-2xl text-center">
                 কিশলয় বিদ্যানিকেতন
               </Typography>
-              <Typography className="text-sm font-bold text-center   rounded-full mx-10 px-3 ">
+              <Typography className="text-[10px] sm:text-xs font-bold text-center rounded-full">
                 প্লে-গ্রুপ থেকে দশম শ্রেণী
               </Typography>
             </Link>

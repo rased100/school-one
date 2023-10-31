@@ -21,7 +21,7 @@ const SingleFileUpload = (props) => {
 
     try {
       const response = await axios.post(
-        "http://mynodejs.kishalayabiddaniketan.edu.bd/upload",
+        "https://mynodejs.kishalayabiddaniketan.edu.bd/upload",
         formData,
         {
           headers: {

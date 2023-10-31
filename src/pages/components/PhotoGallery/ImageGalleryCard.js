@@ -31,7 +31,7 @@ const ImageGalleryCard = ({ images }) => {
                     width={500}
                     height={200}
                     alt={`Image ${index}`}
-                    className="custom-image"
+                    className="custom-image rounded-md"
                   />
                 </div>
               }
@@ -47,12 +47,12 @@ const ImageGalleryCard = ({ images }) => {
       </div>
 
       {selectedImage && (
-        <div className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-black bg-opacity-75 z-50">
+        <div className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center bg-black bg-opacity-75 z-50 ">
           <div className="relative">
             <img
               src={selectedImage}
               alt="Full-Screen"
-              className="max-h-screen max-w-screen"
+              className="max-h-screen max-w-screen rounded-xl"
             />
             <button
               className="absolute top-0 right-0 m-4 text-white text-xl bg-black rounded-full"

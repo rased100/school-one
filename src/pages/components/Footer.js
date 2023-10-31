@@ -68,7 +68,7 @@ const Footer = () => {
     // <footer className="w-full  pt-20 bg-[#1d2d44]"> like
     <footer className="w-full  pt-20 bg-[#003f88] gradient-background">
       {/* <div className=" w-full  "> */}
-      <div className="w-full grid grid-cols-1  lg:grid-cols-3 ">
+      <div className="w-full grid grid-cols-1  lg:grid-cols-3">
         <div
           data-aos="zoom-in"
           data-aos-duration="1500"
@@ -91,9 +91,9 @@ const Footer = () => {
         </div>
 
         <div className="col-span-2">
-          <div className="grid grid-cols-1 sm:grid-cols-3  justify-between gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 px-5">
             {LINKS.map(({ id, title, items }) => (
-              <ul key={id}>
+              <ul key={id} className="text-center lg:text-left">
                 <Typography
                   variant="small"
                   color="blue-gray"

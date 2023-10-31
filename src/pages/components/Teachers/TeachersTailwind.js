@@ -310,17 +310,17 @@ const TeachersTailwind = () => {
                 key={info.id}
                 className="items-center  rounded-lg shadow sm:flex bg-gray-800 border-gray-700"
               >
-                <Link to="">
+                <div className="flex justify-center items-center pt-5 sm:pt-0">
                   <img
-                    className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg max-w-full h-auto"
-                    width={300}
-                    height={300}
+                    className="w-full rounded-full sm:rounded-lg max-w-full h-[150px] w-[150px] sm:h-auto sm:w-auto"
+                    // width={300}
+                    // height={300}
                     src={info.img}
                     alt="Bonnie Avatar"
                   />
-                </Link>
-                <div className="p-5 ">
-                  <h3 className="text-xl font-bold tracking-tight text-gray-900 text-white">
+                </div>
+                <div className="p-5 text-center sm:text-left">
+                  <h3 className=" text-xl font-bold tracking-tight text-gray-900 text-white">
                     <Link to="">{info.name}</Link>
                   </h3>
                   <span className="text-gray-500 text-gray-400">

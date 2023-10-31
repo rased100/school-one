@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const SocialLinksTwnd = () => {
   return (
-    <div>
+    <div className="flex justify-center sm:justify-start">
       <ul className="flex space-x-4 sm:mt-3">
         <li>
           <Link
