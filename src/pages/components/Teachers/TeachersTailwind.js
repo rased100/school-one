@@ -280,39 +280,15 @@ const TeachersTailwind = () => {
               education and development of students.
             </p>
           </div>
-          <div className="grid gap-8 mb-6 lg:mb-16 md:grid-cols-2">
-            {/*  */}
-            {/* <div className="items-center bg-gray-50 rounded-lg shadow sm:flex bg-gray-800 border-gray-700">
-              <Link to="">
-                <img
-                  className="w-full rounded-lg sm:rounded-none sm:rounded-l-lg"
-                  src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/bonnie-green.png"
-                  alt="Bonnie Avatar"
-                />
-              </Link>
-              <div className="p-5">
-                <h3 className="text-xl font-bold tracking-tight text-gray-900 text-white">
-                  <Link to="">Bonnie Green</Link>
-                </h3>
-                <span className="text-gray-500 text-gray-400">
-                  CEO & Web Developer
-                </span>
-                <p className="mt-3 mb-4 font-light text-gray-500 text-gray-400">
-                  Bonnie drives the technical strategy of the flowbite platform
-                  and brand.
-                </p>
-                <SocialLinksTwnd />
-              </div>
-            </div> */}
-            {/*  */}
+          <div className="grid gap-8 mb-6 lg:mb-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-2 ">
             {teachersinfo.map((info) => (
               <div
                 key={info.id}
-                className="items-center  rounded-lg shadow sm:flex bg-gray-800 border-gray-700"
+                className="items-center rounded-lg shadow bg-gray-800 border-gray-700  lg:flex"
               >
-                <div className="flex justify-center items-center pt-5 sm:pt-0">
+                <div className="flex justify-center items-center sm:pt-0">
                   <img
-                    className="w-full rounded-full sm:rounded-lg max-w-full h-[150px] w-[150px] sm:h-auto sm:w-auto"
+                    className="w-full rounded-full p-5 h-[175px] w-[175px] lg:h-auto lg:w-auto"
                     // width={300}
                     // height={300}
                     src={info.img}
@@ -320,7 +296,7 @@ const TeachersTailwind = () => {
                   />
                 </div>
                 <div className="p-5 text-center sm:text-left">
-                  <h3 className=" text-xl font-bold tracking-tight text-gray-900 text-white">
+                  <h3 className="text-xl font-bold tracking-tight text-gray-900 text-white">
                     <Link to="">{info.name}</Link>
                   </h3>
                   <span className="text-gray-500 text-gray-400">
