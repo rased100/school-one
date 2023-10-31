@@ -147,44 +147,57 @@ const teachersinfo = [
   },
 ];
 
-const TeachersTailwind = () => {
+const TeachersPage = () => {
   return (
-    <div className="bg-gray-900 px-10 py-20">
-      <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 text-white">
-          Our Teachers
-        </h2>
-        <p className="font-light text-gray-500 lg:mb-16 sm:text-xl text-gray-400">
-          A teacher is a professional who plays a crucial role in the education
-          and development of students.
-        </p>
-      </div>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-        {teachersinfo.map((info) => (
-          <div
-            key={info.id}
-            className="flex flex-col justify-center items-center rounded-lg shadow bg-gray-800 border-gray-700 p-5"
-          >
-            <div className="flex justify-center items-center h-[150px] w-[150px]">
-              <img className="rounded-full" src={info.img} alt="teachers" />
-            </div>
-            <div className="text-center pt-5">
-              <h3 className="text-xl font-bold tracking-tight text-gray-900 text-white">
-                <Link to="">{info.name}</Link>
-              </h3>
-              <span className="text-gray-500">{info.designation}</span>
-              <p className="text-gray-500">Kishalaya Biddaniketan.</p>
-              {/* <span className="text-gray-500">Email: {info.email}</span> */}
-              <div className="py-2">
-                <SocialLinksTwnd />
-              </div>
-            </div>
+    <div>
+      <div className="bg-gray-900">
+        <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 ">
+          <div className="mx-auto max-w-screen-sm text-center mb-8 lg:mb-16">
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 text-white">
+              Our Teachers
+            </h2>
+            <p className="font-light text-gray-500 lg:mb-16 sm:text-xl text-gray-400">
+              A teacher is a professional who plays a crucial role in the
+              education and development of students.
+            </p>
           </div>
-        ))}
-        {/*  */}
+          <div className="grid gap-8  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+            {teachersinfo.map((info) => (
+              <div
+                key={info.id}
+                className="items-center rounded-lg shadow bg-gray-800 border-gray-700  lg:flex"
+              >
+                <div className="flex justify-center items-center">
+                  <img
+                    className=" rounded-full h-[200px] w-[200px]"
+                    // width={300}
+                    // height={300}
+                    src={info.img}
+                    alt="Bonnie Avatar"
+                  />
+                </div>
+                <div className="p-5 text-center sm:text-left">
+                  <h3 className="text-xl font-bold tracking-tight text-gray-900 text-white">
+                    <Link to="">{info.name}</Link>
+                  </h3>
+                  <span className="text-gray-500 text-gray-400">
+                    {info.designation}
+                  </span>
+                  <p className="flex mt-3 mb-4 font-light text-gray-500 text-gray-400">
+                    {/* Bonnie drives the technical strategy of the flowbite platform and brand. */}
+                    Kishalaya Biddaniketan. House 43, Road 9, Block B, Section
+                    13, Mirpur, Dhaka, 1216
+                  </p>
+                  <SocialLinksTwnd />
+                </div>
+              </div>
+            ))}
+            {/*  */}
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
-export default TeachersTailwind;
+export default TeachersPage;
