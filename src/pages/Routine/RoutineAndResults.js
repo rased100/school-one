@@ -6,7 +6,7 @@ const RoutineAndResults = () => {
   const type = "Class Routine";
 
   return (
-    <div className="lg:flex lg:justify-around bg-gray-700">
+    <div className="lg:grid lg:grid-cols-2 bg-gray-700">
       <Routine name="Class Routine" type="Class Routine" />
       <Routine name="Exam Results" type="Result" />
     </div>

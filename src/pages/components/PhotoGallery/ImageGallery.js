@@ -22,7 +22,7 @@ const ImageGallery = () => {
         Image Gallery
       </h1> */}
       <h2 className="mb-4 text-4xl tracking-tight font-bold text-center text-white  text-black">
-        Image Gallery
+        Photo Gallery
       </h2>
       <p className="mb-5 px-5 text-center  text-gray-400 sm:text-xl md:px-32">
         Explore our image gallery to view captivating visuals from our

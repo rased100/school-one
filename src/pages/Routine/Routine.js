@@ -7,23 +7,26 @@ const Routine = (props) => {
   const url = `https://mynodejs.kishalayabiddaniketan.edu.bd/pdf_files?type=${type}`;
   console.log("routine-url", url);
   return (
-    <div className=" flex justify-center items-center bg-gray-700">
-      <div className="p-4 text-center   sm:p-8 ">
-        {/* <h5 className="mb-2 text-3xl font-bold text-gray-900 dark:text-white">
-          Institute Results
-        </h5> */}
-        <h2 className="py-10 text-4xl tracking-tight font-extrabold text-gray-900 text-white">
-          {props.name}
-        </h2>
-        <p className="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">
-          Kishalaya Biddaniketan {props.name}. Download The {props.name} Today.
-        </p>
-        {/* <div className="h-[70vh] md:h-[40vh] flex-1 overflow-y-auto overflow-hidden"> */}
-        <div className="h-[35vh]  md:h-[50vh] flex-1 overflow-y-auto overflow-hidden">
-          <NoticeLink url={url} />
+    <>
+      <div class=" bg-gray-700 px-10 py-20">
+        <div class="">
+          <div className="justify-center items-center">
+            <h2 className="text-4xl tracking-tight font-extrabold text-gray-900 text-white">
+              {props.name}
+            </h2>
+            <p className="text-base text-gray-500 sm:text-lg dark:text-gray-400 pt-2 pb-5">
+              Kishalaya Biddaniketan {props.name}. Download The {props.name}{" "}
+              Today.
+            </p>
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-lg ">
+          <div className="h-[35vh]  md:h-[50vh] flex-1 overflow-y-auto overflow-hidden">
+            <NoticeLink url={url} />
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
