@@ -18,7 +18,8 @@ const Routine = (props) => {
         <p className="mb-5 text-base text-gray-500 sm:text-lg dark:text-gray-400">
           Kishalaya Biddaniketan {props.name}. Download The {props.name} Today.
         </p>
-        <div className="h-[70vh] md:h-[40vh] flex-1 overflow-y-auto overflow-hidden">
+        {/* <div className="h-[70vh] md:h-[40vh] flex-1 overflow-y-auto overflow-hidden"> */}
+        <div className="h-[35vh]  md:h-[50vh] flex-1 overflow-y-auto overflow-hidden">
           <NoticeLink url={url} />
         </div>
       </div>
