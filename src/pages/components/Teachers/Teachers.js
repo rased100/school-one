@@ -18,7 +18,7 @@ const Teachers = () => {
     {
       id: "1",
       img: teacher1,
-      name: "Abdul Ajiz",
+      name: "Abdul Ajij",
       designation: "Senior Assistant Teacher",
       degree: "M.S.S Mirpur College",
       mobile: "01779313415",
