@@ -5,8 +5,9 @@ const SingleFileUpload = (props) => {
   const { type } = props;
   const [selectedFile, setSelectedFile] = useState(null);
   const [name, setName] = useState("");
-  // const [type, setType] = useState("Class Routine");
   const [suc_Message, setSuc_Message] = useState("");
+  const [fileError, setFileError] = useState("");
+  const [nameError, setNameError] = useState("");
   const [err_Message, setErr_Message] = useState("");
 
   const handleFileChange = (event) => {
@@ -14,6 +15,19 @@ const SingleFileUpload = (props) => {
   };
 
   const handleFileUpload = async () => {
+    setFileError("");
+    setNameError("");
+
+    if (!selectedFile) {
+      setFileError("Please select a file.");
+      return;
+    }
+
+    if (!name) {
+      setNameError("Name is required.");
+      return;
+    }
+
     const formData = new FormData();
     formData.append("pdfFile", selectedFile);
     formData.append("name", name);
@@ -30,15 +44,12 @@ const SingleFileUpload = (props) => {
         }
       );
 
-      // Check the response status and display the message accordingly
       if (response.status === 200) {
-        console.log("res-rsd", response.data);
         console.log("File uploaded successfully");
         setErr_Message("");
         setSuc_Message(response.data || "File uploaded successfully");
-        // setSuc_Message("File uploaded successfully");
       } else if (response.status === 409) {
-        console.log("File with the same originalname already exists");
+        console.log("File with the same original name already exists");
       }
     } catch (error) {
       console.error("Error uploading file:", error);
@@ -59,6 +70,7 @@ const SingleFileUpload = (props) => {
           onChange={handleFileChange}
           className="mb-2"
         />
+        {fileError && <p className="text-red-500">{fileError}</p>}
         <input
           type="text"
           placeholder="Name"
@@ -66,16 +78,17 @@ const SingleFileUpload = (props) => {
           onChange={(e) => setName(e.target.value)}
           className="w-full p-2 mb-2 rounded border"
         />
+        {nameError && <p className="text-red-500">{nameError}</p>}
         <select
           value={type}
-          // onChange={(e) => setType(e.target.value)}
           className="w-full p-2 mb-2 rounded border"
+          disabled
         >
           <option value={props.type}>{props.type}</option>
         </select>
         <button
           onClick={handleFileUpload}
-          className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600"
+          className="bg-blue-500 text-white py-2 px-4 rounded hover-bg-blue-600"
         >
           Upload
         </button>
