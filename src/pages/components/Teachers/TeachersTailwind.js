@@ -14,6 +14,8 @@ import teacher11 from "../../../assets/teachers/11.png";
 import teacher12 from "../../../assets/teachers/12.png";
 import teacher13 from "../../../assets/teachers/13.png";
 import teacher14 from "../../../assets/teachers/14.png";
+import teacher15 from "../../../assets/teachers/15.png";
+import teacher16 from "../../../assets/teachers/16.png";
 import { Link } from "react-router-dom";
 
 const teachersinfo = [
@@ -52,6 +54,22 @@ const teachersinfo = [
     designation: "Senior Teacher",
     degree: "M.A  Ananda Mohan Government College",
     mobile: "01683804320",
+  },
+  {
+    id: "15",
+    img: teacher15,
+    name: "Md. Ashrafuzzaman",
+    designation: "Senior Teacher",
+    degree: "M.A  Ananda Mohan Government College",
+    mobile: "01683804318",
+  },
+  {
+    id: "16",
+    img: teacher16,
+    name: "Md. Aminul islam",
+    designation: "Senior Teacher",
+    degree: "M.A  Ananda Mohan Government College",
+    mobile: "01744786139",
   },
   {
     id: "9",
